@@ -1,0 +1,24 @@
+.app {
+  position: relative;
+}
+
+.img-cover {
+  object-fit: cover;
+  max-width: 100%;
+  display: block;
+  height: auto;
+}
+
+.social-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  & > * {
+    margin: 0 4px;
+  }
+}
+
+.section {
+  min-height: 100vh;
+}

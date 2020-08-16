@@ -1,0 +1,11 @@
+.content-limiter {
+  max-width: 1170px;
+  padding: 0 16px;
+  margin: 0 auto;
+
+  &--full-width {
+    max-width: 100%;
+    padding: initial;
+    margin: initial;
+  }
+}

@@ -1,0 +1,43 @@
+@import '../../../styles/colors.scss';
+@import '../../../styles/configs.scss';
+
+.home {
+  background-image: url(../../../assets/images/home-bg1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.home-decoration {
+  position: absolute;
+  max-width: fit-content;
+  width: 600px;
+}
+
+.home-decoration--right {
+  bottom: -1px;
+  right: 0;
+
+  @media screen and (max-width: $breakpoint-up-md) {
+    right: -200px;
+  }
+  @media screen and (max-width: $breakpoint-up-xs) {
+    right: -300px;
+  }
+}
+
+.home-decoration--left {
+  top: 0;
+  left: -80px;
+  @media screen and (max-width: $breakpoint-up-lg) {
+    left: -100px;
+  }
+  @media screen and (max-width: $breakpoint-up-md) {
+    left: -120px;
+  }
+  @media screen and (max-width: $breakpoint-up-xs) {
+    left: -160px;
+  }
+}

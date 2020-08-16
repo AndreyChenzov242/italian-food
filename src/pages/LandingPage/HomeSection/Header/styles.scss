@@ -1,0 +1,54 @@
+@import '../../../../styles/configs.scss';
+
+.header {
+  padding: 32px;
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  display: flex;
+  align-items: flex-start;
+  // background-color: rgba($color: #000000, $alpha: 0.7);
+
+  @media screen and (max-width: $breakpoint-up-md) {
+    padding: 48px;
+  }
+  @media screen and (max-width: $breakpoint-up-xs) {
+    padding: 32px;
+  }
+  @media screen and (max-width: $breakpoint-up-lg) {
+    padding: 32px;
+  }
+
+  &__search-form {
+    background-color: #ffffff;
+    height: 42px;
+    width: 260px;
+    border-radius: 25px;
+    overflow: hidden;
+    padding: 0 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 32px;
+
+    @media screen and (max-width: $breakpoint-up-md) {
+      display: none;
+    }
+  }
+
+  &__input {
+    border: none;
+    height: 100%;
+    width: 100%;
+  }
+
+  &__content-wrapper {
+    display: flex;
+    align-items: flex-start;
+    margin-left: 20%;
+    @media screen and (max-width: $breakpoint-up-lg) {
+      margin-left: 15%;
+    }
+  }
+}
