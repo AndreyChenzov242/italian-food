@@ -35,7 +35,7 @@ Button.propTypes = {
   margin: PropTypes.string,
   variant: PropTypes.oneOf(['outlined', 'contained']),
   color: PropTypes.oneOf(['white', 'orange']),
-  onClick: PropTypes.func.isRequired,
+  onClick: PropTypes.func,
 };
 
 // Default value for props

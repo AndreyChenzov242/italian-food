@@ -9,7 +9,7 @@
   z-index: 1;
   display: flex;
   align-items: flex-start;
-  background-color: rgba(28, 33, 40,0.95);
+  //background-color: rgba(28, 33, 40,0.95);
 
   @media screen and (max-width: $breakpoint-up-md) {
     padding: 48px;
@@ -20,7 +20,7 @@
     padding: 32px;
   }
   @media screen and (max-width: $breakpoint-up-sm) {
-    padding: 16px;
+    padding: 24px;
   }
 
   &__search-form {
@@ -44,6 +44,10 @@
     border: none;
     height: 100%;
     width: 100%;
+  }
+
+  &__logo {
+    z-index: 5;
   }
 
   &__content-wrapper {

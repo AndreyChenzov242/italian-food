@@ -3,24 +3,40 @@
 
 .sidebar {
   position: fixed;
-  left:-100%;
+  left: -100%;
   top: 0;
   height: 100vh;
   width: 230px;
-  padding: 32px;
-  padding-top: 86px;
-  background-color: rgba(28, 33, 40,0.95);
+  padding: 24px;
+  padding-top: 118px;
+  background-color: rgba(28, 33, 40, 0.95);
   transition: 0.25s left linear;
 
-  &__item{
-    padding: 24px;
-  }
-  &__text{
-    font-size: 24px;
-    color: #fff;
+  @media screen and (max-width: $breakpoint-up-sm) {
+    padding-top: 86px;
   }
 
-  &--open{
-   left:0;
+  &__nav {
+    height: 100%;
+  }
+
+  &__item {
+    padding: 16px 0;
+    font-size: 24px;
+    color: #fff;
+    display: block;
+  }
+
+  &--open {
+    left: 0;
+
+    .sidebar__backdrop {
+      position: fixed;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      z-index: -1;
+    }
   }
 }

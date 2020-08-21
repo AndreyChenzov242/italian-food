@@ -1,11 +1,7 @@
 import React, { useState } from 'react';
 
-// Modules
-
-import classNames from 'classnames';
-import types from 'prop-types';
-
 // Components
+
 import { Search } from '../../../../assets/svg/Search';
 import logo from '../../../../assets/images/logo-md.png';
 import { Navbar } from '../../../../components/Navbar';
@@ -31,7 +27,6 @@ export const Header = () => {
       <img className="header__logo" src={logo} />
       <div className="header__content-wrapper">
         <Navbar list={navbarList} />
-        <Sidebar list={navbarList} open={sidebarOpen} />
         <form className="header__search-form">
           <input type="text" className="header__input" />
           <button>
@@ -39,7 +34,8 @@ export const Header = () => {
           </button>
         </form>
       </div>
-      <HamburgerButton onClick={toggleSidebar} isOpen={sidebarOpen}/>
+      <HamburgerButton onClick={toggleSidebar} isOpen={sidebarOpen} />
+      <Sidebar list={navbarList} open={sidebarOpen} onClick={toggleSidebar} />
     </header>
   );
 };

@@ -3,6 +3,7 @@ import React, { Fragment } from 'react';
 // Modules
 
 import { Link } from 'react-scroll';
+import types from 'prop-types';
 
 // Styles
 
@@ -20,8 +21,6 @@ export const Navbar = ({ list }) => {
               activeClass="navbar__item--active"
               className="navbar__item"
               isDynamic={true}
-              duration={500}
-              smooth={true}
               spy={true}
               to={item.to}
             >
@@ -34,14 +33,8 @@ export const Navbar = ({ list }) => {
   );
 };
 
-// // Type of props
+// Type of props
 
-// Name.propTypes = {
-//   example: types.bool,
-// };
-
-// // Default value for props
-
-// Name.defaultProps = {
-//   example: true,
-// };
+Navbar.propTypes = {
+  list: types.array.isRequired,
+};
