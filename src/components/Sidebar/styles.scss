@@ -1,0 +1,26 @@
+@import '../../styles/colors.scss';
+@import '../../styles/configs.scss';
+
+.sidebar {
+  position: fixed;
+  left:-100%;
+  top: 0;
+  height: 100vh;
+  width: 230px;
+  padding: 32px;
+  padding-top: 86px;
+  background-color: rgba(28, 33, 40,0.95);
+  transition: 0.25s left linear;
+
+  &__item{
+    padding: 24px;
+  }
+  &__text{
+    font-size: 24px;
+    color: #fff;
+  }
+
+  &--open{
+   left:0;
+  }
+}

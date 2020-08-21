@@ -2,7 +2,7 @@
 
 .navbar {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
   max-width: 500px;
   height: 100%;
   width: 100%;
@@ -41,6 +41,10 @@
     align-items: center;
     justify-content: center;
     font-weight: 500;
+
+    &:hover {
+      font-weight: 800;
+    }
 
     &--active {
       font-weight: 800;

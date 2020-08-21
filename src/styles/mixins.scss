@@ -9,3 +9,11 @@
 	align-items: center;
 	display: flex;
 }
+
+@mixin btn-hover($bg-color, $color, $border-color) {
+  &:hover {
+    color: $color;
+    background-color: $bg-color;
+    border-color: $border-color;
+  }
+}

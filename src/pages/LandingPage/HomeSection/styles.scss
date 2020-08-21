@@ -5,15 +5,60 @@
   background-image: url(../../../assets/images/home-bg1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
   position: relative;
   overflow: hidden;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &__content {
+    width: 100%;
+    max-width: 470px;
+    padding: 120px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    font-family: 'Yeseva One', cursive;
+    color: #fff;
+  }
+
+  &__h1 {
+    font-size: 8.625rem;
+    line-height: 1;
+    @media screen and (max-width: $breakpoint-up-md) {
+      font-size: 6rem;
+    }
+  }
+  &__subtitle {
+    font-size: 3.0625rem;
+    line-height: 49px;
+    margin-bottom: 32px;
+    @media screen and (max-width: $breakpoint-up-md) {
+      font-size: 2.1437rem;
+    }
+  }
+  &__text {
+    font-size: 2.6875rem;
+    @media screen and (max-width: $breakpoint-up-md) {
+      font-size: 1.875rem;
+    }
+  }
 }
 
 .home-decoration {
   position: absolute;
   max-width: fit-content;
   width: 600px;
+  pointer-events: none;
+
+  @media screen and (max-width: $breakpoint-down-xxs) {
+    display: none;
+  }
+  @media screen and (max-height: $breakpoint-up-xs) {
+    display: none;
+  }
 }
 
 .home-decoration--right {
@@ -38,6 +83,6 @@
     left: -120px;
   }
   @media screen and (max-width: $breakpoint-up-xs) {
-    left: -160px;
+    left: -175px;
   }
 }

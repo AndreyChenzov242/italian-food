@@ -5,19 +5,22 @@
   position: fixed;
   left: 0;
   right: 0;
+  top: 0;
   z-index: 1;
   display: flex;
   align-items: flex-start;
-  // background-color: rgba($color: #000000, $alpha: 0.7);
+  background-color: rgba(28, 33, 40,0.95);
 
   @media screen and (max-width: $breakpoint-up-md) {
     padding: 48px;
-  }
-  @media screen and (max-width: $breakpoint-up-xs) {
-    padding: 32px;
+    align-items: center;
+    justify-content: space-between;
   }
   @media screen and (max-width: $breakpoint-up-lg) {
     padding: 32px;
+  }
+  @media screen and (max-width: $breakpoint-up-sm) {
+    padding: 16px;
   }
 
   &__search-form {
@@ -47,7 +50,7 @@
     display: flex;
     align-items: flex-start;
     margin-left: 20%;
-    @media screen and (max-width: $breakpoint-up-lg) {
+    @media screen and (max-width: $breakpoint-up-xl) {
       margin-left: 15%;
     }
   }

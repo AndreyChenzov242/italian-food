@@ -10,9 +10,7 @@ import './styles.scss';
 
 // ----------------
 
-export const Navbar = props => {
-  const { list } = props;
-
+export const Navbar = ({ list }) => {
   return (
     <nav className="navbar">
       {list.map((item, index) => {

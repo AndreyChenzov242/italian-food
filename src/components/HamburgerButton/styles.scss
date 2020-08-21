@@ -1,0 +1,32 @@
+@import '../../styles/configs.scss';
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+    width: 42px;
+    height: 42px;
+
+    @media (max-width: $breakpoint-up-md) {
+      display: block;
+    }
+    .line {
+      width: 36px;
+      height: 4px;
+      background-color: #ffffff;
+      display: block;
+      margin: 8px auto;
+      transition: all 0.3s ease-in-out;
+    }
+
+    &--active .line:nth-child(2) {
+      opacity: 0;
+    }
+
+    &--active .line:nth-child(1) {
+      transform: translateY(12px) rotate(45deg);
+    }
+
+    &--active .line:nth-child(3) {
+      transform: translateY(-12px) rotate(-45deg);
+    }
+  }

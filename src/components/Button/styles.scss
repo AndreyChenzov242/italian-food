@@ -5,47 +5,47 @@
 .button {
   display: inline-block;
   text-decoration: none;
-  padding: 10px 15px;
+  padding: 4px 16px;
   border: 2px solid;
   border-radius: 25px;
   cursor: pointer;
   transition: all 0.5s;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-family: 'Raleway', sans-serif;
 
   &--size-xs {
     font-size: 1rem;
     min-width: 88px;
   }
   &--size-sm {
-    font-size: 1rem;
-    min-width: 130px;
+    font-size: 1.5625rem;
+    min-width: 150px;
+    line-height: 1.36em;
   }
   &--size-md {
-    font-size: 1.125rem;
+    font-size: 2rem;
     min-width: 170px;
-  }
-  &--size-lg {
-    font-size: 1.25rem;
-    min-width: 200px;
-  }
-  &--size-xl {
-    font-size: 1.25rem;
-    font-weight: bold;
-    min-width: 240px;
   }
   &--size-fluid {
     font-size: 1.25rem;
-    font-weight: bold;
     width: 100%;
   }
 
   &--mb-sm {
     margin-bottom: 8px;
   }
+  &--mt-sm {
+    margin-top: 8px;
+  }
   &--mr-sm {
     margin-right: 8px;
   }
   &--ml-sm {
     margin-left: 8px;
+  }
+  &--mt-md {
+    margin-top: 16px;
   }
   &--ml-md {
     margin-left: 16px;
@@ -59,11 +59,17 @@
   &--ml-lg {
     margin-left: 32px;
   }
+  &--mt-lg {
+    margin-top: 32px;
+  }
   &--mr-lg {
     margin-right: 32px;
   }
   &--mb-lg {
     margin-bottom: 32px;
+  }
+  &--mt-xl {
+    margin-top: 48px;
   }
   &--ml-xl {
     margin-left: 48px;
@@ -77,18 +83,18 @@
   }
 
   &--variant-contained {
-    &.button--color-yellow {
-      border-color: $yellow;
-      background-color: $yellow;
-      color: $blue-dark-2;
+    &.button--color-orange {
+      border-color: $orange;
+      background-color: $orange;
+      color: $dark-blue;
       @media screen and (min-width: 1025px) {
-        @include btn-hover(rgba(0, 0, 0, 0), $text-color, $yellow);
+        @include btn-hover(rgba(0, 0, 0, 0), $orange, $orange);
       }
     }
     &.button--color-white {
       border-color: #fff;
       background-color: #fff;
-      color: $blue-dark-2;
+      color: $dark-blue;
       @media screen and (min-width: 1025px) {
         @include btn-hover(rgba(0, 0, 0, 0), $text-color, #ffffff);
       }
@@ -96,18 +102,18 @@
   }
 
   &--variant-outlined {
-    &.button--color-yellow {
-      border-color: $yellow;
-      color: $text-color;
+    &.button--color-orange {
+      border-color: $orange;
+      color: $orange;
       @media screen and (min-width: 1025px) {
-        @include btn-hover($yellow, $blue-dark-2, $yellow);
+        @include btn-hover($orange, $dark-blue, $orange);
       }
     }
     &.button--color-white {
       border-color: #fff;
       color: $text-color;
       @media screen and (min-width: 1025px) {
-        @include btn-hover(#ffffff, $blue-dark-2, #ffffff);
+        @include btn-hover(#ffffff, $dark-blue, #ffffff);
       }
     }
   }

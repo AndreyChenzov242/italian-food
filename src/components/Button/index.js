@@ -2,7 +2,8 @@ import React from 'react';
 
 // Modules
 
-import classnames from 'classnames';
+import classNames from 'classnames';
+import PropTypes from 'prop-types';
 
 //Styles
 
@@ -10,15 +11,8 @@ import './styles.scss';
 
 //------------
 
-export const Button = ({
-  children,
-  size = 'sm',
-  margin,
-  variant = 'outlined',
-  color = 'white',
-  onClick,
-}) => {
-  const buttonClass = classnames({
+export const Button = ({ children, size, margin, variant, color, onClick }) => {
+  const buttonClass = classNames({
     button: true,
     [`button--size-${size}`]: size,
     [`button--${margin}`]: margin,
@@ -31,4 +25,23 @@ export const Button = ({
       {children}
     </button>
   );
+};
+
+// Type of props
+
+Button.propTypes = {
+  children: PropTypes.node.isRequired,
+  size: PropTypes.oneOf(['xs', 'sm', 'md', 'fluid']),
+  margin: PropTypes.string,
+  variant: PropTypes.oneOf(['outlined', 'contained']),
+  color: PropTypes.oneOf(['white', 'orange']),
+  onClick: PropTypes.func.isRequired,
+};
+
+// Default value for props
+
+Button.defaultProps = {
+  color: 'white',
+  size: 'sm',
+  variant: 'contained',
 };
