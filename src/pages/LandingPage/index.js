@@ -3,6 +3,7 @@ import React from 'react';
 // Components
 import { HomeSection } from './HomeSection';
 import { AboutSection } from './AboutSection';
+import { FeaturesSection } from './FeaturesSection';
 
 // Styles
 
@@ -15,6 +16,7 @@ export const LandingPage = () => {
     <div className="landing">
       <HomeSection />
       <AboutSection/>
+      <FeaturesSection/>
     </div>
   );
 };

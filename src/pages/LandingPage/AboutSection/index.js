@@ -2,7 +2,7 @@ import React from 'react';
 
 // Components
 
-import aboutImage from '../../../assets/images/about-image.png';
+import aboutImage from '../../../assets/images/about-image.jpg';
 
 // Styles
 
@@ -16,8 +16,10 @@ export const AboutSection = () => {
       <div className="about__wrapper">
         <div className="column">
           <div className="about__article">
-            <h2 className="about__title">About us</h2>
-            <div className="about__subtitle">The Best Food &amp; Drinks</div>
+            <h2 className="title">About us</h2>
+            <div className="subtitle about__subtitle">
+              The Best Food &amp; Drinks
+            </div>
             <div className="about__line"></div>
             <p className="about__descr">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do

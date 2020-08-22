@@ -28,7 +28,9 @@ export const HomeSection = () => {
       <div className="home__content">
         <h1 className="home__h1">Italian</h1>
         <div className="home__subtitle">. Delicious Food .</div>
-        <Button margin="mb-md">see more</Button>
+        <Button margin="mb-md" uppercase>
+          see more
+        </Button>
         <div className="home__text">Call Us!</div>
       </div>
     </div>

@@ -6,30 +6,33 @@
   display: inline-block;
   text-decoration: none;
   padding: 4px 16px;
+  line-height: 1.2em;
   border: 2px solid;
   border-radius: 25px;
   cursor: pointer;
   transition: all 0.5s;
   font-weight: bold;
-  text-transform: uppercase;
   font-family: 'Raleway', sans-serif;
 
   &--size-xs {
     font-size: 1rem;
     min-width: 88px;
+    padding-top: 1px;
   }
   &--size-sm {
     font-size: 1.5625rem;
     min-width: 150px;
-    line-height: 1.36em;
+    padding-top: 1px;
   }
   &--size-md {
     font-size: 2rem;
     min-width: 170px;
+    padding-top: 1px;
   }
   &--size-fluid {
     font-size: 1.25rem;
     width: 100%;
+    padding-top: 1px;
   }
 
   &--mb-sm {
@@ -86,9 +89,9 @@
     &.button--color-orange {
       border-color: $orange;
       background-color: $orange;
-      color: $dark-blue;
+      color: #ffffff;
       @media screen and (min-width: 1025px) {
-        @include btn-hover(rgba(0, 0, 0, 0), $orange, $orange);
+        @include btn-hover(rgba(0, 0, 0, 0), #ffffff, $orange);
       }
     }
     &.button--color-white {
@@ -116,5 +119,10 @@
         @include btn-hover(#ffffff, $dark-blue, #ffffff);
       }
     }
+  }
+
+  &--uppercase {
+    text-transform: uppercase;
+    padding-top: 4px;
   }
 }

@@ -11,10 +11,19 @@ import './styles.scss';
 
 //------------
 
-export const Button = ({ children, size, margin, variant, color, onClick }) => {
+export const Button = ({
+  children,
+  size,
+  margin,
+  variant,
+  color,
+  onClick,
+  uppercase,
+}) => {
   const buttonClass = classNames({
     button: true,
     [`button--size-${size}`]: size,
+    [`button--uppercase`]: uppercase,
     [`button--${margin}`]: margin,
     [`button--color-${color}`]: color,
     [`button--variant-${variant}`]: variant,
@@ -36,6 +45,7 @@ Button.propTypes = {
   variant: PropTypes.oneOf(['outlined', 'contained']),
   color: PropTypes.oneOf(['white', 'orange']),
   onClick: PropTypes.func,
+  uppercase: PropTypes.bool,
 };
 
 // Default value for props

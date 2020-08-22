@@ -33,6 +33,6 @@ Search.propTypes = {
 // Default value for props
 
 Search.defaultProps = {
-  width: '30',
-  height: '30',
+  width: '25',
+  height: '25',
 };

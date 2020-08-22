@@ -1,0 +1,36 @@
+@import '../../../styles/configs.scss';
+
+.features {
+  min-height: 580px !important;
+  background-image: url('../../../assets/images/features-bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 32px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &__title {
+    color: #fff;
+
+    @media screen and (max-width: $breakpoint-up-xs) {
+      line-height: 0.9em;
+      margin-bottom: 32px;
+    }
+  }
+  &__subtitle {
+    color: #fff;
+    margin-bottom: 48px;
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    // position: absolute;
+    // top: 50%;
+    // left: 50%;
+    // transform: translateY(-50%) translateX(-50%);
+  }
+}
