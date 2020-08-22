@@ -2,6 +2,7 @@ import React from 'react';
 
 // Components
 import { HomeSection } from './HomeSection';
+import { AboutSection } from './AboutSection';
 
 // Styles
 
@@ -13,11 +14,7 @@ export const LandingPage = () => {
   return (
     <div className="landing">
       <HomeSection />
-      <div
-        className="section"
-        id="info"
-        style={{ backgroundColor: 'red' }}
-      ></div>
+      <AboutSection/>
     </div>
   );
 };

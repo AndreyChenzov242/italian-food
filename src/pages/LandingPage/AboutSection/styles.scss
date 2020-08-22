@@ -1,0 +1,77 @@
+@import '../../../styles/colors.scss';
+@import '../../../styles/configs.scss';
+
+.about {
+  padding: 136px 80px 120px 80px;
+
+  @media screen and (max-width: $breakpoint-up-xl) {
+    padding: 136px 56px 120px 56px;
+  }
+
+  @media screen and (max-width: $breakpoint-up-lg) {
+    padding: 136px 32px 120px 32px;
+  }
+
+  &__wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    @media screen and (max-width: $breakpoint-up-md) {
+      grid-template-columns: 1fr;
+      text-align: center;
+    }
+
+    .column {
+      padding: 0 32px;
+
+      @media screen and (max-width: $breakpoint-up-md) {
+        padding: 0;
+      }
+
+      & > * {
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+  }
+
+  &__title {
+    font-size: 4.6875rem;
+    font-family: 'Yeseva One', cursive;
+  }
+
+  &__subtitle {
+    font-weight: bold;
+    font-size: 2.0812rem;
+    margin-bottom: 48px;
+  }
+
+  &__line {
+    height: 2px;
+    width: 100%;
+    background-color: #4d5055;
+    margin-bottom: 48px;
+  }
+
+  &__descr {
+    font-size: 2.0812rem;
+    font-weight: normal;
+    margin-top: 48px;
+  }
+
+  &__article {
+    max-width: 680px;
+
+    @media screen and (max-width: $breakpoint-up-md) {
+      margin-bottom: 32px;
+    }
+  }
+
+  &__image {
+    display: block;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    max-width: 635px;
+  }
+}
