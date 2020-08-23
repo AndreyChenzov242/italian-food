@@ -1,30 +1,33 @@
 {
   "files": {
-    "main.css": "/italian-food/static/css/main.d6029b62.chunk.css",
-    "main.js": "/italian-food/static/js/main.96ca6183.chunk.js",
-    "main.js.map": "/italian-food/static/js/main.96ca6183.chunk.js.map",
+    "main.css": "/italian-food/static/css/main.4c2590f9.chunk.css",
+    "main.js": "/italian-food/static/js/main.45c32d35.chunk.js",
+    "main.js.map": "/italian-food/static/js/main.45c32d35.chunk.js.map",
     "runtime-main.js": "/italian-food/static/js/runtime-main.5ed9a8b9.js",
     "runtime-main.js.map": "/italian-food/static/js/runtime-main.5ed9a8b9.js.map",
     "static/css/2.ba159d6b.chunk.css": "/italian-food/static/css/2.ba159d6b.chunk.css",
-    "static/js/2.27aa1d8a.chunk.js": "/italian-food/static/js/2.27aa1d8a.chunk.js",
-    "static/js/2.27aa1d8a.chunk.js.map": "/italian-food/static/js/2.27aa1d8a.chunk.js.map",
+    "static/js/2.a3b43b0b.chunk.js": "/italian-food/static/js/2.a3b43b0b.chunk.js",
+    "static/js/2.a3b43b0b.chunk.js.map": "/italian-food/static/js/2.a3b43b0b.chunk.js.map",
     "index.html": "/italian-food/index.html",
-    "precache-manifest.c4b8577e268fec636afa06a79843e148.js": "/italian-food/precache-manifest.c4b8577e268fec636afa06a79843e148.js",
+    "precache-manifest.cbbcc156fe5e760cfaacad61efb04c67.js": "/italian-food/precache-manifest.cbbcc156fe5e760cfaacad61efb04c67.js",
     "service-worker.js": "/italian-food/service-worker.js",
     "static/css/2.ba159d6b.chunk.css.map": "/italian-food/static/css/2.ba159d6b.chunk.css.map",
-    "static/css/main.d6029b62.chunk.css.map": "/italian-food/static/css/main.d6029b62.chunk.css.map",
-    "static/js/2.27aa1d8a.chunk.js.LICENSE.txt": "/italian-food/static/js/2.27aa1d8a.chunk.js.LICENSE.txt",
+    "static/css/main.4c2590f9.chunk.css.map": "/italian-food/static/css/main.4c2590f9.chunk.css.map",
+    "static/js/2.a3b43b0b.chunk.js.LICENSE.txt": "/italian-food/static/js/2.a3b43b0b.chunk.js.LICENSE.txt",
     "static/media/about-image.jpg": "/italian-food/static/media/about-image.1ad5c44f.jpg",
     "static/media/styles.scss": "/italian-food/static/media/home-bg1.d0e8f641.jpg",
     "static/media/home-decoration-left.png": "/italian-food/static/media/home-decoration-left.f11471b0.png",
     "static/media/home-decoration-right.png": "/italian-food/static/media/home-decoration-right.b87cb0f9.png",
+    "static/media/pizza-4-seasons.jpg": "/italian-food/static/media/pizza-4-seasons.6f154ad6.jpg",
+    "static/media/pizza-bavaria.webp": "/italian-food/static/media/pizza-bavaria.b1b8aa78.webp",
+    "static/media/pizza-fermers.jpg": "/italian-food/static/media/pizza-fermers.a278bd11.jpg",
     "static/media/index.scss": "/italian-food/static/media/slick.f97e3bbf.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.5ed9a8b9.js",
     "static/css/2.ba159d6b.chunk.css",
-    "static/js/2.27aa1d8a.chunk.js",
-    "static/css/main.d6029b62.chunk.css",
-    "static/js/main.96ca6183.chunk.js"
+    "static/js/2.a3b43b0b.chunk.js",
+    "static/css/main.4c2590f9.chunk.css",
+    "static/js/main.45c32d35.chunk.js"
   ]
 }

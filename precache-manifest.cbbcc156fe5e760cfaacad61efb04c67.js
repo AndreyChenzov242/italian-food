@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "e9a2ce713dbabe58be006ef38dabc343",
+    "revision": "55869430843c30c161b084e85e44c74c",
     "url": "/italian-food/index.html"
   },
   {
-    "revision": "83049a6e4b2cc8102cc8",
+    "revision": "9b5c56d05a51649e6ed6",
     "url": "/italian-food/static/css/2.ba159d6b.chunk.css"
   },
   {
-    "revision": "d515dd61ae3c446d536c",
-    "url": "/italian-food/static/css/main.d6029b62.chunk.css"
+    "revision": "1997d494588643ccbfae",
+    "url": "/italian-food/static/css/main.4c2590f9.chunk.css"
   },
   {
-    "revision": "83049a6e4b2cc8102cc8",
-    "url": "/italian-food/static/js/2.27aa1d8a.chunk.js"
+    "revision": "9b5c56d05a51649e6ed6",
+    "url": "/italian-food/static/js/2.a3b43b0b.chunk.js"
   },
   {
     "revision": "5ac48c47bb3912b14c2d8de4f56d5ae8",
-    "url": "/italian-food/static/js/2.27aa1d8a.chunk.js.LICENSE.txt"
+    "url": "/italian-food/static/js/2.a3b43b0b.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "d515dd61ae3c446d536c",
-    "url": "/italian-food/static/js/main.96ca6183.chunk.js"
+    "revision": "1997d494588643ccbfae",
+    "url": "/italian-food/static/js/main.45c32d35.chunk.js"
   },
   {
     "revision": "9091bf4d9cb6d499e443",
@@ -46,6 +46,18 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "b87cb0f918776c89b762da14eec489c1",
     "url": "/italian-food/static/media/home-decoration-right.b87cb0f9.png"
+  },
+  {
+    "revision": "6f154ad68647e6c0fc3fe60e8a64262a",
+    "url": "/italian-food/static/media/pizza-4-seasons.6f154ad6.jpg"
+  },
+  {
+    "revision": "b1b8aa782ea1534ecf7fa5fea7857d3e",
+    "url": "/italian-food/static/media/pizza-bavaria.b1b8aa78.webp"
+  },
+  {
+    "revision": "a278bd1192af89d732f201e5e9877c50",
+    "url": "/italian-food/static/media/pizza-fermers.a278bd11.jpg"
   },
   {
     "revision": "b7c9e1e479de3b53f1e4e30ebac2403a",
