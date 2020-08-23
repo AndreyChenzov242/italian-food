@@ -1,0 +1,57 @@
+@import '../../styles/configs.scss';
+@import '../../styles/colors.scss';
+@import '../../styles/mixins.scss';
+
+.tabs {
+  &__header-scroll-wrapper {
+    overflow-x: auto;
+    max-width: 100%;
+  }
+
+  &__header {
+    display: flex;
+    border-bottom: 1px solid $grey-3;
+    width: fit-content;
+    min-width: 100%;
+  }
+
+  &__header-link {
+    position: relative;
+    height: 48px;
+    @include center;
+    cursor: pointer;
+    padding: 0 24px;
+    font-size: 24px;
+    font-family: 'Yeseva One', cursive;
+
+    p {
+      font-weight: 700;
+      margin-right: 12px;
+    }
+
+    &:before {
+      display: none;
+      content: '';
+      position: absolute;
+      height: 3px;
+      width: 100%;
+      background-color: $grey-3;
+      left: 0;
+      bottom: -1px;
+    }
+
+    &--active {
+      &:before {
+        display: block;
+      }
+    }
+
+    &--full-width {
+      flex: 1;
+    }
+  }
+
+  &__content {
+    padding-top: 24px;
+  }
+}

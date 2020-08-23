@@ -22,7 +22,7 @@ export const ContentWidthLimiter = ({ fullWidth, children }) => {
 
 // Type of props
 
-// ContentWidthLimiter.propTypes = {
-//   fullWidth: types.bool,
-//   children: types.node.isRequired,
-// };
+ContentWidthLimiter.propTypes = {
+  fullWidth: types.bool,
+  children: types.node.isRequired,
+};

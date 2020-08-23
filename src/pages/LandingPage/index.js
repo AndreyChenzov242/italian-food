@@ -4,6 +4,7 @@ import React from 'react';
 import { HomeSection } from './HomeSection';
 import { AboutSection } from './AboutSection';
 import { FeaturesSection } from './FeaturesSection';
+import { MenuSection } from './MenuSection';
 
 // Styles
 
@@ -15,8 +16,9 @@ export const LandingPage = () => {
   return (
     <div className="landing">
       <HomeSection />
-      <AboutSection/>
-      <FeaturesSection/>
+      <AboutSection />
+      <FeaturesSection />
+      <MenuSection />
     </div>
   );
 };

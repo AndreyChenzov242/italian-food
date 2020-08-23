@@ -10,7 +10,7 @@
 
   @media screen and (max-width: $breakpoint-up-lg) {
     grid-template-columns: repeat(auto-fill, minmax(70px, 1fr));
-    max-width: 375px;
+    max-width: 400px;
   }
   @media screen and (max-width: $breakpoint-up-md) {
     display: none;
