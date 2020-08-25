@@ -9,6 +9,8 @@ import { Sidebar } from '../../../../components/Sidebar';
 import { navbarList } from '../../../../constans/navbarList';
 import { HamburgerButton } from '../../../../components/HamburgerButton';
 
+import { Basket } from '../../../../components/Basket';
+
 // Styles
 
 import './styles.scss';
@@ -24,7 +26,7 @@ export const Header = () => {
 
   return (
     <header className="header">
-      <img className="header__logo" src={logo} />
+      <img className="header__logo" src={logo} alt="logo" />
       <div className="header__content-wrapper">
         <Navbar list={navbarList} />
         <form className="header__search-form">
@@ -36,6 +38,7 @@ export const Header = () => {
       </div>
       <HamburgerButton onClick={toggleSidebar} isOpen={sidebarOpen} />
       <Sidebar list={navbarList} open={sidebarOpen} onClick={toggleSidebar} />
+      <Basket />
     </header>
   );
 };

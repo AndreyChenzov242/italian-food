@@ -11,9 +11,14 @@ import './styles.scss';
 
 // ----------------
 
-export const ReactIcon = props => {
-  const { className, color, size, onClick, id } = props;
-
+export const ReactIcon = ({
+  className,
+  color,
+  size,
+  onClick,
+  id,
+  children,
+}) => {
   const reactIconClass = classnames(
     {
       'react-icon': true,
@@ -25,7 +30,7 @@ export const ReactIcon = props => {
 
   return (
     <div className={reactIconClass} onClick={onClick} id={id}>
-      {props.children}
+      {children}
     </div>
   );
 };
@@ -35,7 +40,7 @@ export const ReactIcon = props => {
 ReactIcon.propTypes = {
   className: types.string,
   onClick: types.func,
-  color: types.oneOf(['yellow']),
+  color: types.oneOf(['yellow', 'white']),
   size: types.string,
   id: types.string,
 };

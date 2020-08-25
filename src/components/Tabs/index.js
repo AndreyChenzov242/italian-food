@@ -5,19 +5,13 @@ import React, { useState } from 'react';
 import classNames from 'classnames';
 import types from 'prop-types';
 
-// Components
-
-import { ReactIcon } from '../ReactIcon';
-
 // Styles
 
 import './styles.scss';
 
 // ----------------
 
-export const Tabs = props => {
-  const { linkFullWidth, defaultTab, content, links } = props;
-
+export const Tabs = ({ defaultTab, content, links }) => {
   const [activeTabName, setActiveTabName] = useState(
     defaultTab || links[0].name
   );
@@ -32,7 +26,6 @@ export const Tabs = props => {
     classNames({
       'tabs__header-link': true,
       'tabs__header-link--active': name === activeTabName,
-      'tabs__header-link--full-width': linkFullWidth,
     });
 
   return (
@@ -64,10 +57,4 @@ Tabs.propTypes = {
   defaultTab: types.string,
   content: types.array.isRequired,
   links: types.array.isRequired,
-};
-
-// Default value for props
-
-Tabs.defaultProps = {
-  example: true,
 };

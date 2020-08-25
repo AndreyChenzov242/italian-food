@@ -1,4 +1,5 @@
 @import '../../../../styles/configs.scss';
+@import '../../../../styles/colors.scss';
 
 .header {
   padding: 32px;
@@ -36,8 +37,11 @@
     align-items: center;
     margin-left: 32px;
 
-    @media screen and (max-width: $breakpoint-up-md) {
+    @media screen and (max-width: $breakpoint-up-lg) {
       display: none;
+    }
+    @media screen and (max-width: $breakpoint-up-xl) {
+      width: 220px;
     }
   }
 
@@ -60,6 +64,32 @@
     }
     @media screen and (min-width: $breakpoint-down-xl) {
       margin: 0 auto;
+    }
+  }
+
+  .basket {
+    margin-left: auto;
+    cursor: pointer;
+    position: relative;
+
+    @media screen and (max-width: $breakpoint-up-md) {
+      display: none;
+    }
+
+    &-counter {
+      position: absolute;
+      right: -8px;
+      top: -4px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 24px;
+      height: 24px;
+      background-color: #f47262;
+      border-radius: 50%;
+      font-size: 1.125rem;
+      font-family: sans-serif;
+      color: white;
     }
   }
 }

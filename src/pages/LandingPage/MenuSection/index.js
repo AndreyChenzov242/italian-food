@@ -2,7 +2,6 @@ import React from 'react';
 
 // Components
 
-import { Button } from '../../../components/Button';
 import { ContentWidthLimiter } from '../../../components/ContentWidthLimiter';
 import { MenuTabs } from './MenuTabs';
 

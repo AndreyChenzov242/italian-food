@@ -10,27 +10,27 @@ import { Tabs } from '../../../../components/Tabs';
 
 export const MenuTabs = () => {
   const tabsLinks = [
-    { name: 'tabOne', title: 'Pizza' },
-    { name: 'tabTwo', title: 'Pasta' },
-    { name: 'tabThree', title: 'Soup' },
-    { name: 'tabFour', title: 'Salads' },
+    { name: 'Pizza', title: 'Pizza' },
+    { name: 'Pasta', title: 'Pasta' },
+    { name: 'Soup', title: 'Soup' },
+    { name: 'Salads', title: 'Salads' },
   ];
 
   const tabsContent = [
     {
-      name: 'tabOne',
+      name: 'Pizza',
       content: () => <TabsContent data={pizza} />,
     },
     {
-      name: 'tabTwo',
+      name: 'Pasta',
       content: () => <TabsContent data={pasta} />,
     },
     {
-      name: 'tabThree',
+      name: 'Soup',
       content: () => <TabsContent data={soups} />,
     },
     {
-      name: 'tabFour',
+      name: 'Salads',
       content: () => <TabsContent data={salads} />,
     },
   ];

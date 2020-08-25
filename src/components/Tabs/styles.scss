@@ -24,7 +24,7 @@
     font-size: 24px;
     font-weight: 500;
     color: $grey-2;
-    // font-family: 'Yeseva One', cursive;
+    flex: 1 1;
 
     p {
       font-weight: 700;
@@ -48,10 +48,6 @@
       &:before {
         display: block;
       }
-    }
-
-    &--full-width {
-      flex: 1;
     }
   }
 

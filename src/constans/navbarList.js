@@ -1,5 +1,3 @@
-import React from 'react';
-
 export const navbarList = [
   { name: 'Home', to: 'home' },
   { name: 'Info', to: 'info' },

@@ -20,10 +20,12 @@ export const HomeSection = () => {
       <img
         className="home-decoration home-decoration--left"
         src={homeDecorationLeft}
+        alt="home-decoration"
       />
       <img
         className="home-decoration home-decoration--right"
         src={homeDecorationRight}
+        alt="home-decoration"
       />
       <div className="home__content">
         <h1 className="home__h1">Italian</h1>

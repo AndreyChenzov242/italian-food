@@ -91,7 +91,7 @@
       background-color: $orange;
       color: #ffffff;
       @media screen and (min-width: 1025px) {
-        @include btn-hover(rgba(0, 0, 0, 0), #ffffff, $orange);
+        @include btn-hover(rgba(0, 0, 0, 0), $orange, $orange);
       }
     }
     &.button--color-white {
