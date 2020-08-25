@@ -1,11 +1,7 @@
 import React from 'react';
 
-// Modules
-
-import { FaPizzaSlice, FaEarlybirds, FaGitlab } from 'react-icons/fa';
-
 // Components
-// import { pizza } from '../../../../mocks'
+
 import { pizza, pasta, soups, salads } from '../../../../mocks/MenuData';
 import { TabsContent } from '../../../../components/TabsContent';
 import { Tabs } from '../../../../components/Tabs';

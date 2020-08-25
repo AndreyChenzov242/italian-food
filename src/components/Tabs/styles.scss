@@ -61,5 +61,8 @@
     @media screen and(max-width:$breakpoint-up-md) {
       padding-top: 32px;
     }
+    @media screen and(max-width:$breakpoint-up-sm) {
+      padding-top: 24px;
+    }
   }
 }

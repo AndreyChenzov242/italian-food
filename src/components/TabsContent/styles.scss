@@ -12,6 +12,7 @@
   }
   @media screen and(max-width:$breakpoint-up-sm) {
     grid-template-columns: 1fr;
+    gap: 24px;
   }
 
   .card {
@@ -29,7 +30,7 @@
       margin-bottom: 12px;
     }
     &__descr {
-      font-size: 1rem;
+      font-size: 1.25rem;
       margin-bottom: 12px;
       margin-top: auto;
     }
