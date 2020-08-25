@@ -22,7 +22,9 @@
     cursor: pointer;
     padding: 0 24px;
     font-size: 24px;
-    font-family: 'Yeseva One', cursive;
+    font-weight: 500;
+    color: $grey-2;
+    // font-family: 'Yeseva One', cursive;
 
     p {
       font-weight: 700;
@@ -41,6 +43,8 @@
     }
 
     &--active {
+      color: #000;
+      font-weight: 600;
       &:before {
         display: block;
       }
@@ -52,6 +56,10 @@
   }
 
   &__content {
-    padding-top: 24px;
+    padding-top: 48px;
+
+    @media screen and(max-width:$breakpoint-up-md) {
+      padding-top: 32px;
+    }
   }
 }

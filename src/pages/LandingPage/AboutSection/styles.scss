@@ -14,6 +14,10 @@
     padding: 136px 0 120px 0;
   }
 
+  @media screen and(max-width: $breakpoint-up-md) {
+    padding: 96px 0 32px 0;
+  }
+
   &__wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr;

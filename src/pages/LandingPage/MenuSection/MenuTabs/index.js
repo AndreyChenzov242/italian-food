@@ -3,10 +3,11 @@ import React from 'react';
 // Modules
 
 import { FaPizzaSlice, FaEarlybirds, FaGitlab } from 'react-icons/fa';
-import { Pizza } from '../../../../components/tabsContent/Pizza';
 
 // Components
-
+// import { pizza } from '../../../../mocks'
+import { pizza, pasta, soups, salads } from '../../../../mocks/MenuData';
+import { TabsContent } from '../../../../components/TabsContent';
 import { Tabs } from '../../../../components/Tabs';
 
 // ----------------
@@ -16,32 +17,32 @@ export const MenuTabs = () => {
     { name: 'tabOne', title: 'Pizza' },
     { name: 'tabTwo', title: 'Pasta' },
     { name: 'tabThree', title: 'Soup' },
-    { name: 'tabFour', title: 'Juices' },
+    { name: 'tabFour', title: 'Salads' },
   ];
 
   const tabsContent = [
     {
       name: 'tabOne',
-      content: () => Pizza(),
+      content: () => <TabsContent data={pizza} />,
     },
     {
       name: 'tabTwo',
-      content: () => <h1>TAB2</h1>,
+      content: () => <TabsContent data={pasta} />,
     },
     {
       name: 'tabThree',
-      content: () => <h1>TAB3</h1>,
+      content: () => <TabsContent data={soups} />,
     },
     {
       name: 'tabFour',
-      content: () => <h1>TAB4</h1>,
+      content: () => <TabsContent data={salads} />,
     },
   ];
 
   return (
     <Tabs
       linkFullWidth
-      defaultTab={tabsLinks[1].name}
+      defaultTab={tabsLinks[0].name}
       content={tabsContent}
       links={tabsLinks}
     />
