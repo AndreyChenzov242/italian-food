@@ -2,10 +2,10 @@ import React from 'react';
 
 // Components
 
-import { Header } from './Header';
-import { Button } from '../../../components/Button';
-import homeDecorationLeft from '../../../assets/images/home-decoration-left.png';
 import homeDecorationRight from '../../../assets/images/home-decoration-right.png';
+import homeDecorationLeft from '../../../assets/images/home-decoration-left.png';
+import { Button } from '../../../components/Button';
+import { Header } from './Header';
 
 // Styles
 

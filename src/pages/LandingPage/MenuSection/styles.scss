@@ -8,12 +8,6 @@
     padding: 96px 0 32px 0;
   }
 
-  .content-limiter {
-    @media screen and(max-width:$breakpoint-up-sm) {
-      padding: 0 24px;
-    }
-  }
-
   &__title {
     line-height: 1.2em;
     margin-bottom: 12px;

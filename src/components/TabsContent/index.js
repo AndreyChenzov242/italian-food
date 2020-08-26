@@ -9,18 +9,14 @@ import { useCookies } from 'react-cookie';
 
 import { Button } from '../Button';
 
-// Components
-
 // Styles
 
 import './styles.scss';
 
 // ----------------
 
-export const TabsContent = ({ data }) => {
+export const TabsContent = ({ tabsContentData }) => {
   const [cookies, setCookie] = useCookies(['shoppingData']);
-
-  console.log('cookies.shoppingData', cookies.shoppingData);
 
   const addShopingItem = id => {
     if (Object.keys(cookies).length) {
@@ -36,14 +32,18 @@ export const TabsContent = ({ data }) => {
 
   return (
     <div className="content-wrapper">
-      {data.map(data => {
+      {tabsContentData.map(tabsItem => {
         return (
-          <div className="menu__card card" key={data.id}>
-            <p className="card__title">{data.title}</p>
-            <p className="card__descr">{data.description}</p>
-            <img className="card__img" src={data.img} alt={data.title} />
-            <p className="card__price">Price: {data.price}$</p>
-            <Button color="orange" onClick={() => addShopingItem(data.id)}>
+          <div className="menu__card card" key={tabsItem.id}>
+            <p className="card__title">{tabsItem.title}</p>
+            <p className="card__descr">{tabsItem.description}</p>
+            <img
+              className="card__img"
+              src={tabsItem.img}
+              alt={tabsItem.title}
+            />
+            <p className="card__price">Price: {tabsItem.price}$</p>
+            <Button color="orange" onClick={() => addShopingItem(tabsItem.id)}>
               Add
             </Button>
           </div>
@@ -56,5 +56,5 @@ export const TabsContent = ({ data }) => {
 // Type of props
 
 TabsContent.propTypes = {
-  data: types.array.isRequired,
+  tabsContentData: types.array.isRequired,
 };

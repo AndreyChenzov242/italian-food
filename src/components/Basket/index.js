@@ -18,12 +18,6 @@ export const Basket = ({}) => {
     counter = set.size;
   }
 
-  //console.log(cookies.shoppingData);
-
-  // const counter =
-  //   Object.keys(cookies).length != 0 ? cookies.shoppingData.length : 0;
-  // console.log(cookies.shoppingData);
-
   return (
     <div className="basket">
       <ReactIcon size="xxxl" color="white">
@@ -33,15 +27,3 @@ export const Basket = ({}) => {
     </div>
   );
 };
-
-// // Type of props
-
-// Basket.propTypes = {
-//   counter: PropTypes.string,
-// };
-
-// // Default value for props
-
-// Basket.defaultProps = {
-//   counter: '0',
-// };

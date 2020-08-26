@@ -1,9 +1,10 @@
 import React from 'react';
 
 // Components
-import { HomeSection } from './HomeSection';
-import { AboutSection } from './AboutSection';
+
 import { FeaturesSection } from './FeaturesSection';
+import { AboutSection } from './AboutSection';
+import { HomeSection } from './HomeSection';
 import { MenuSection } from './MenuSection';
 
 // Styles

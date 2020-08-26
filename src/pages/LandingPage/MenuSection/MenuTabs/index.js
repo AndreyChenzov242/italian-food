@@ -2,8 +2,8 @@ import React from 'react';
 
 // Components
 
-import { menuData } from '../../../../mocks/menuData';
 import { TabsContent } from '../../../../components/TabsContent';
+import { menuData } from '../../../../mocks/menuData';
 import { Tabs } from '../../../../components/Tabs';
 
 // ----------------
@@ -19,48 +19,37 @@ export const MenuTabs = () => {
   const pizza = menuData.filter(function (e) {
     return e.name === 'pizza';
   });
-  console.log('pizza', pizza);
 
   const pasta = menuData.filter(function (e) {
     return e.name === 'pasta';
   });
-  console.log('pasta', pasta);
 
   const soups = menuData.filter(function (e) {
     return e.name === 'soups';
   });
-  console.log('soups', soups);
 
   const salads = menuData.filter(function (e) {
     return e.name === 'salads';
   });
-  console.log('salads', salads);
 
   const tabsContent = [
     {
       name: 'Pizza',
-      content: () => <TabsContent data={pizza} />,
+      content: () => <TabsContent tabsContentData={pizza} />,
     },
     {
       name: 'Pasta',
-      content: () => <TabsContent data={pasta} />,
+      content: () => <TabsContent tabsContentData={pasta} />,
     },
     {
       name: 'Soup',
-      content: () => <TabsContent data={soups} />,
+      content: () => <TabsContent tabsContentData={soups} />,
     },
     {
       name: 'Salads',
-      content: () => <TabsContent data={salads} />,
+      content: () => <TabsContent tabsContentData={salads} />,
     },
   ];
 
-  return (
-    <Tabs
-      linkFullWidth
-      defaultTab={tabsLinks[0].name}
-      content={tabsContent}
-      links={tabsLinks}
-    />
-  );
+  return <Tabs content={tabsContent} links={tabsLinks} />;
 };

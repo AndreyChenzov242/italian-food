@@ -8,7 +8,6 @@ import { Navbar } from '../../../../components/Navbar';
 import { Sidebar } from '../../../../components/Sidebar';
 import { navbarList } from '../../../../constans/navbarList';
 import { HamburgerButton } from '../../../../components/HamburgerButton';
-
 import { Basket } from '../../../../components/Basket';
 
 // Styles
@@ -29,7 +28,6 @@ export const Header = () => {
       <a className="header__logo-wrapper" href="#">
         <img src={logo} alt="logo" />
       </a>
-
       <div className="header__content-wrapper">
         <Navbar list={navbarList} />
         <form className="header__search-form search-form">
