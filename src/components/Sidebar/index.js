@@ -5,6 +5,10 @@ import React, { useEffect } from 'react';
 import classNames from 'classnames';
 import PropTypes from 'prop-types';
 
+// Components
+
+import { Search } from '../../assets/svg/Search';
+
 // Style
 
 import './styles.scss';
@@ -27,20 +31,29 @@ export const Sidebar = ({ list, open, onClick }) => {
 
   return (
     <div className={sidebarClass}>
-      <nav className="sidebar__nav">
-        {list.map((item, index) => {
-          return (
-            <a
-              href={`#${item.to}`}
-              key={index}
-              onClick={onClick}
-              className="sidebar__item"
-            >
-              {item.name}
-            </a>
-          );
-        })}
-      </nav>
+      <div className="sidebar-wrapper">
+        <nav className="sidebar__nav">
+          {list.map((item, index) => {
+            return (
+              <a
+                href={`#${item.to}`}
+                key={index}
+                onClick={onClick}
+                className="sidebar__item"
+              >
+                {item.name}
+              </a>
+            );
+          })}
+        </nav>
+        <form className="sidebar-form search-form">
+          <input type="text" className="search-form__input" />
+          <button>
+            <Search />
+          </button>
+        </form>
+      </div>
+
       <div className="sidebar__backdrop" onClick={onClick} />
     </div>
   );

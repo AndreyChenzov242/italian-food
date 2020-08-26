@@ -2,7 +2,7 @@ import React from 'react';
 
 // Components
 
-import { pizza, pasta, soups, salads } from '../../../../mocks/MenuData';
+import { menuData } from '../../../../mocks/menuData';
 import { TabsContent } from '../../../../components/TabsContent';
 import { Tabs } from '../../../../components/Tabs';
 
@@ -15,6 +15,26 @@ export const MenuTabs = () => {
     { name: 'Soup', title: 'Soup' },
     { name: 'Salads', title: 'Salads' },
   ];
+
+  const pizza = menuData.filter(function (e) {
+    return e.name === 'pizza';
+  });
+  console.log('pizza', pizza);
+
+  const pasta = menuData.filter(function (e) {
+    return e.name === 'pasta';
+  });
+  console.log('pasta', pasta);
+
+  const soups = menuData.filter(function (e) {
+    return e.name === 'soups';
+  });
+  console.log('soups', soups);
+
+  const salads = menuData.filter(function (e) {
+    return e.name === 'salads';
+  });
+  console.log('salads', salads);
 
   const tabsContent = [
     {

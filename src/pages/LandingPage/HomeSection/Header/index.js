@@ -26,11 +26,14 @@ export const Header = () => {
 
   return (
     <header className="header">
-      <img className="header__logo" src={logo} alt="logo" />
+      <a className="header__logo-wrapper" href="#">
+        <img src={logo} alt="logo" />
+      </a>
+
       <div className="header__content-wrapper">
         <Navbar list={navbarList} />
-        <form className="header__search-form">
-          <input type="text" className="header__input" />
+        <form className="header__search-form search-form">
+          <input type="text" className="header__input search-form__input" />
           <button>
             <Search />
           </button>

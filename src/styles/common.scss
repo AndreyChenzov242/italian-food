@@ -46,3 +46,37 @@
     font-size: 1.75rem;
   }
 }
+
+.basket-counter {
+  position: absolute;
+  right: -8px;
+  top: -4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  background-color: #f47262;
+  border-radius: 50%;
+  font-size: 1rem;
+  font-family: sans-serif;
+  color: white;
+}
+
+.search-form {
+  background-color: #ffffff;
+  height: 34px;
+  max-width: 260px;
+  border-radius: 25px;
+  overflow: hidden;
+  padding: 0 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.search-form__input {
+  border: none;
+  height: 100%;
+  width: 100%;
+}

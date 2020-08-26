@@ -24,10 +24,11 @@ import saladMeal from '../assets/images/salad-meal.jpg';
 import saladSalmon from '../assets/images/salad-salmon.jpg';
 import saladCaesar from '../assets/images/salad-tsezar.jpg';
 
-export const pizza = [
+export const menuData = [
   {
     id: '1',
-    name: 'Four seasons',
+    title: 'Four seasons',
+    name: 'pizza',
     description:
       'Lorem ipsum dolor amet consectetur  adipisicingsed do eiusmod tempor',
     img: pizza4Seasons,
@@ -35,7 +36,8 @@ export const pizza = [
   },
   {
     id: '2',
-    name: 'Bavarian',
+    title: 'Bavarian',
+    name: 'pizza',
     description:
       'Lorem ipsum dolor amet consectetur  adipisicingsed do eiusmod tempor',
     img: pizzaBavar,
@@ -43,7 +45,8 @@ export const pizza = [
   },
   {
     id: '3',
-    name: 'Farm',
+    title: 'Farm',
+    name: 'pizza',
     description:
       'Lorem ipsum dolor amet consectetur  adipisicingsed do eiusmod tempor',
     img: pizzaFermers,
@@ -51,7 +54,8 @@ export const pizza = [
   },
   {
     id: '4',
-    name: 'Hawaiian',
+    title: 'Hawaiian',
+    name: 'pizza',
     description:
       'Lorem ipsum dolor amet consectetur  adipisicingsed do eiusmod tempor',
     img: pizzaHawaiian,
@@ -59,18 +63,17 @@ export const pizza = [
   },
   {
     id: '5',
-    name: 'Kaprichoze',
+    title: 'Kaprichoze',
+    name: 'pizza',
     description:
       'Lorem ipsum dolor amet consectetur  adipisicingsed do eiusmod tempor',
     img: pizzaKaprichoze,
     price: '22',
   },
-];
-
-export const pasta = [
   {
     id: '6',
-    name: 'Karbonara',
+    title: 'Karbonara',
+    name: 'pasta',
     description:
       'Lorem ipsum dolor amet consectetur  adipisicingsed do eiusmod tempor',
     img: pastakarbonara,
@@ -78,7 +81,8 @@ export const pasta = [
   },
   {
     id: '7',
-    name: 'Shrimp',
+    title: 'Shrimp',
+    name: 'pasta',
     description:
       'Lorem ipsum dolor amet consectetur  adipisicingsed do eiusmod tempor',
     img: pastaShrimp,
@@ -86,7 +90,8 @@ export const pasta = [
   },
   {
     id: '8',
-    name: 'Salmon',
+    title: 'Salmon',
+    name: 'pasta',
     description:
       'Lorem ipsum dolor amet consectetur  adipisicingsed do eiusmod tempor',
     img: pastaSalmon,
@@ -94,7 +99,8 @@ export const pasta = [
   },
   {
     id: '9',
-    name: 'Becon',
+    title: 'Becon',
+    name: 'pasta',
     description:
       'Lorem ipsum dolor amet consectetur  adipisicingsed do eiusmod tempor',
     img: pastaBecon,
@@ -102,7 +108,8 @@ export const pasta = [
   },
   {
     id: '10',
-    name: 'Tagliatelle',
+    title: 'Tagliatelle',
+    name: 'pasta',
     description:
       'Lorem ipsum dolor amet consectetur  adipisicingsed do eiusmod tempor',
     img: pastaTalyatte,
@@ -110,7 +117,8 @@ export const pasta = [
   },
   {
     id: '11',
-    name: 'Veal',
+    title: 'Veal',
+    name: 'pasta',
     description:
       'Lorem ipsum dolor amet consectetur  adipisicingsed do eiusmod tempor',
     img: pastaVeal,
@@ -118,17 +126,17 @@ export const pasta = [
   },
   {
     id: '12',
-    name: 'Tagliatelle with chicken',
+    title: 'Tagliatelle with chicken',
+    name: 'pasta',
     description:
       'Lorem ipsum dolor amet consectetur  adipisicingsed do eiusmod tempor',
     img: pastaTalyatteChiken,
     price: '22',
   },
-];
-export const soups = [
   {
     id: '13',
-    name: 'Chiken',
+    title: 'Chiken',
+    name: 'soups',
     description:
       'Lorem ipsum dolor amet consectetur  adipisicingsed do eiusmod tempor',
     img: soupChiken,
@@ -136,7 +144,8 @@ export const soups = [
   },
   {
     id: '14',
-    name: 'Fadjoli',
+    title: 'Fadjoli',
+    name: 'soups',
     description:
       'Lorem ipsum dolor amet consectetur  adipisicingsed do eiusmod tempor',
     img: soupFadjoli,
@@ -145,7 +154,8 @@ export const soups = [
 
   {
     id: '15',
-    name: 'Kachuko',
+    title: 'Kachuko',
+    name: 'soups',
     description:
       'Lorem ipsum dolor amet consectetur  adipisicingsed do eiusmod tempor',
     img: soupKachuko,
@@ -153,17 +163,17 @@ export const soups = [
   },
   {
     id: '16',
-    name: 'Minitrone',
+    title: 'Minitrone',
+    name: 'soups',
     description:
       'Lorem ipsum dolor amet consectetur  adipisicingsed do eiusmod tempor',
     img: soupMinitrone,
     price: '10',
   },
-];
-export const salads = [
   {
     id: '17',
-    name: 'Greece',
+    title: 'Greece',
+    name: 'salads',
     description:
       'Lorem ipsum dolor amet consectetur  adipisicingsed do eiusmod tempor',
     img: saladGreece,
@@ -171,7 +181,8 @@ export const salads = [
   },
   {
     id: '18',
-    name: 'Karpeze',
+    title: 'Karpeze',
+    name: 'salads',
     description:
       'Lorem ipsum dolor amet consectetur  adipisicingsed do eiusmod tempor',
     img: saladKarpeze,
@@ -180,7 +191,8 @@ export const salads = [
 
   {
     id: '19',
-    name: 'Langet',
+    title: 'Langet',
+    name: 'salads',
     description:
       'Lorem ipsum dolor amet consectetur  adipisicingsed do eiusmod tempor',
     img: saladLanget,
@@ -188,7 +200,8 @@ export const salads = [
   },
   {
     id: '20',
-    name: 'Meal',
+    title: 'Meal',
+    name: 'salads',
     description:
       'Lorem ipsum dolor amet consectetur  adipisicingsed do eiusmod tempor',
     img: saladMeal,
@@ -196,7 +209,8 @@ export const salads = [
   },
   {
     id: '21',
-    name: 'Salmon',
+    title: 'Salmon',
+    name: 'salads',
     description:
       'Lorem ipsum dolor amet consectetur  adipisicingsed do eiusmod tempor',
     img: saladSalmon,
@@ -204,10 +218,17 @@ export const salads = [
   },
   {
     id: '22',
-    name: 'Caesar',
+    title: 'Caesar',
+    name: 'salads',
     description:
       'Lorem ipsum dolor amet consectetur  adipisicingsed do eiusmod tempor',
     img: saladCaesar,
     price: '16',
   },
 ];
+
+export const pasta = [];
+
+export const pizza = [];
+export const soups = [];
+export const salads = [];

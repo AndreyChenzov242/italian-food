@@ -16,8 +16,17 @@
     padding-top: 86px;
   }
 
-  &__nav {
+  &-wrapper {
+    overflow-y: auto;
     height: 100%;
+  }
+
+  &__search-form {
+    width: 100%;
+  }
+
+  &__nav {
+    margin-bottom: 12px;
   }
 
   &__item {
