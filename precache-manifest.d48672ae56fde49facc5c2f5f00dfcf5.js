@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "0a20145a7bcde9250dfe2c66315bdfab",
+    "revision": "ebfee34d47b9395247cb28b271518bdd",
     "url": "/italian-food/index.html"
   },
   {
-    "revision": "1646381d9283e2a36ff1",
+    "revision": "e2a954e64062e5710f5d",
     "url": "/italian-food/static/css/2.ba159d6b.chunk.css"
   },
   {
-    "revision": "729037b0b8c7c405069d",
-    "url": "/italian-food/static/css/main.18ff7d1b.chunk.css"
+    "revision": "32b39738646254032017",
+    "url": "/italian-food/static/css/main.46bb0a2e.chunk.css"
   },
   {
-    "revision": "1646381d9283e2a36ff1",
-    "url": "/italian-food/static/js/2.75cf6219.chunk.js"
+    "revision": "e2a954e64062e5710f5d",
+    "url": "/italian-food/static/js/2.c1115894.chunk.js"
   },
   {
-    "revision": "5ac48c47bb3912b14c2d8de4f56d5ae8",
-    "url": "/italian-food/static/js/2.75cf6219.chunk.js.LICENSE.txt"
+    "revision": "2db80ee6e43bb57ab10aefd739542bd4",
+    "url": "/italian-food/static/js/2.c1115894.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "729037b0b8c7c405069d",
-    "url": "/italian-food/static/js/main.00d4a6de.chunk.js"
+    "revision": "32b39738646254032017",
+    "url": "/italian-food/static/js/main.e9d97fb7.chunk.js"
   },
   {
     "revision": "9091bf4d9cb6d499e443",
