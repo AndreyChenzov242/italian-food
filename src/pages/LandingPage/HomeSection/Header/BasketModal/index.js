@@ -26,7 +26,7 @@ export const BasketModal = ({ isOpen, onClose }) => {
   let shoppingItem = {};
   let shoppingSetArray = [];
 
-  console.log(cookies.shoppingData);
+  //console.log(cookies.shoppingData);
 
   if (Object.keys(cookies).length) {
     var shoppingIsArray = Array.from(new Set(cookies.shoppingData));
@@ -39,6 +39,8 @@ export const BasketModal = ({ isOpen, onClose }) => {
       shoppingSetArray[index] = { ...shoppingItem[0] };
     }
   }
+
+  //console.log(shoppingSetArray.length == 0);
 
   // const counterOfSameShoppingItems = [];
 
@@ -96,6 +98,7 @@ export const BasketModal = ({ isOpen, onClose }) => {
             </div>
           );
         })}
+      {!shoppingSetArray.length && <p>No item here</p>}
     </Modal>
   );
 };
