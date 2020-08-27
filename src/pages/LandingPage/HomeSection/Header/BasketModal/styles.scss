@@ -1,5 +1,59 @@
 @import '../../../../../styles/configs.scss';
 
-.modal__icon-wrapper {
-  display: inline-block;
+.basket {
+  &-modal {
+    &__card {
+      display: flex;
+      margin-bottom: 24px;
+      align-items: flex-start;
+    }
+    &__title {
+      font-size: 1.75rem;
+      font-weight: bold;
+    }
+    &__img {
+      width: 130px;
+    }
+    &__price {
+      align-self: center;
+      font-size: 2rem;
+      margin-left: auto;
+      margin-right: 32px;
+      font-family: sans-serif;
+
+      @media screen and (max-width: $breakpoint-up-sm) {
+        margin-right: 0;
+      }
+    }
+    &__descr {
+      font-weight: 100;
+      font-size: 1rem;
+      @media screen and (max-width: $breakpoint-up-xs) {
+        display: none;
+      }
+    }
+    &__article {
+      max-width: 300px;
+    }
+
+    &__counter-wrapper {
+      display: flex;
+    }
+
+    &__content-wrapper {
+      display: flex;
+      margin-left: 24px;
+
+      @media screen and (max-width: $breakpoint-up-xs) {
+        flex-direction: column;
+      }
+    }
+
+    .modal__body {
+      padding: 0 16px 16px 16px;
+    }
+    .modal__header {
+      padding: 16px 40px 0 16px;
+    }
+  }
 }

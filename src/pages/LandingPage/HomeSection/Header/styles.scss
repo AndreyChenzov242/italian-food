@@ -48,3 +48,13 @@
     position: relative;
   }
 }
+
+body.overflow-hidden {
+  .header {
+    padding-right: 49px;
+
+    @media screen and (max-width: $breakpoint-up-sm) {
+      padding-right: 24px;
+    }
+  }
+}

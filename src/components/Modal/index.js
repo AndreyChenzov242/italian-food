@@ -25,6 +25,7 @@ export const Modal = ({
   title,
   isOpen,
   titleIcon,
+  addModalClass,
 }) => {
   useEffect(() => {
     if (isOpen) {
@@ -37,6 +38,7 @@ export const Modal = ({
   const modalClass = classNames({
     modal: true,
     'modal--isOpen': isOpen,
+    [`${addModalClass}`]: addModalClass,
   });
 
   const modalContent = classNames({

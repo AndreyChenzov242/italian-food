@@ -7,6 +7,7 @@ import { useCookies } from 'react-cookie';
 
 // Components
 
+import { AiOutlinePlusCircle, AiOutlineMinusCircle } from 'react-icons/ai';
 import { Modal } from '../../../../../components/Modal';
 import { Button } from '../../../../../components/Button';
 import { CgShoppingCart } from 'react-icons/cg';
@@ -44,18 +45,39 @@ export const BasketModal = ({ isOpen, onClose }) => {
       width="md"
       title="Basket"
       titleIcon={CgShoppingCart}
+      addModalClass="basket-modal"
     >
       {shoppingSetArray &&
         shoppingSetArray.map(shoppingItem => {
           return (
-            <div key={shoppingItem.id}>
-              <p>{shoppingItem.title}</p>
-              <p>{shoppingItem.description}</p>
-              <img src={shoppingItem.img} alt={shoppingItem.title} />
-              <p>Price: {shoppingItem.price}$</p>
-              {/* <Button color="orange" onClick={() => addShopingItem(shoppingItem.id)}>
-            Add
-          </Button> */}
+            <div className="basket-modal__card" key={shoppingItem.id}>
+              <img
+                className="basket-modal__img"
+                src={shoppingItem.img}
+                alt={shoppingItem.title}
+              />
+              <div className="basket-modal__content-wrapper">
+                <div className="basket-modal__article">
+                  <p className="basket-modal__title">{shoppingItem.title}</p>
+                  <p className="basket-modal__descr">
+                    {shoppingItem.description}
+                  </p>
+                </div>
+                <div className="basket-modal__counter-wrapper">
+                  <button>
+                    <ReactIcon size="xxxl" color="orange">
+                      <AiOutlineMinusCircle />
+                    </ReactIcon>
+                  </button>
+                  <button>
+                    <ReactIcon size="xxxl" color="orange">
+                      <AiOutlinePlusCircle />
+                    </ReactIcon>
+                  </button>
+                </div>
+              </div>
+
+              <p className="basket-modal__price">{shoppingItem.price}$</p>
             </div>
           );
         })}
