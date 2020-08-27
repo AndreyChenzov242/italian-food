@@ -26,6 +26,8 @@ export const BasketModal = ({ isOpen, onClose }) => {
   let shoppingItem = {};
   let shoppingSetArray = [];
 
+  console.log(cookies.shoppingData);
+
   if (Object.keys(cookies).length) {
     var shoppingIsArray = Array.from(new Set(cookies.shoppingData));
 
@@ -37,6 +39,18 @@ export const BasketModal = ({ isOpen, onClose }) => {
       shoppingSetArray[index] = { ...shoppingItem[0] };
     }
   }
+
+  const counterOfSameShoppingItems = [];
+
+  for (let index = 0; index < shoppingIsArray.length; index++) {
+    counterOfSameShoppingItems[index] = cookies.shoppingData.filter(function (
+      e
+    ) {
+      return e == shoppingIsArray[index];
+    });
+  }
+
+  console.log(counterOfSameShoppingItems);
 
   return (
     <Modal
@@ -69,6 +83,7 @@ export const BasketModal = ({ isOpen, onClose }) => {
                       <AiOutlineMinusCircle />
                     </ReactIcon>
                   </button>
+                  <div className="counter__text">2</div>
                   <button>
                     <ReactIcon size="xxxl" color="orange">
                       <AiOutlinePlusCircle />
