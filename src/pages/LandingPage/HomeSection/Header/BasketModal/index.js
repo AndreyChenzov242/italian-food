@@ -40,17 +40,17 @@ export const BasketModal = ({ isOpen, onClose }) => {
     }
   }
 
-  const counterOfSameShoppingItems = [];
+  // const counterOfSameShoppingItems = [];
 
-  for (let index = 0; index < shoppingIsArray.length; index++) {
-    counterOfSameShoppingItems[index] = cookies.shoppingData.filter(function (
-      e
-    ) {
-      return e == shoppingIsArray[index];
-    });
-  }
+  // for (let index = 0; index < shoppingIsArray.length; index++) {
+  //   counterOfSameShoppingItems[index] = cookies.shoppingData.filter(function (
+  //     e
+  //   ) {
+  //     return e == shoppingIsArray[index];
+  //   });
+  // }
 
-  console.log(counterOfSameShoppingItems);
+  // console.log(counterOfSameShoppingItems);
 
   return (
     <Modal
