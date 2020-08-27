@@ -24,7 +24,7 @@ export const TabsContent = ({ tabsContentData }) => {
         path: '/',
       });
     } else {
-      setCookie('shoppingData', id, {
+      setCookie('shoppingData', [id], {
         path: '/',
       });
     }

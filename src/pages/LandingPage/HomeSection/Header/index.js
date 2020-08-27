@@ -9,6 +9,7 @@ import { Sidebar } from '../../../../components/Sidebar';
 import { navbarList } from '../../../../constans/navbarList';
 import { HamburgerButton } from '../../../../components/HamburgerButton';
 import { Basket } from '../../../../components/Basket';
+import { BasketModal } from './BasketModal';
 
 // Styles
 
@@ -19,8 +20,13 @@ import './styles.scss';
 export const Header = () => {
   const [sidebarOpen, setsidebarOpen] = useState(false);
 
+  const [modalrOpen, setModalOpen] = useState(false);
+
   function toggleSidebar() {
     setsidebarOpen(!sidebarOpen);
+  }
+  function toggleModal() {
+    setModalOpen(!modalrOpen);
   }
 
   return (
@@ -39,7 +45,8 @@ export const Header = () => {
       </div>
       <HamburgerButton onClick={toggleSidebar} isOpen={sidebarOpen} />
       <Sidebar list={navbarList} open={sidebarOpen} onClick={toggleSidebar} />
-      <Basket />
+      <Basket onClick={toggleModal} />
+      <BasketModal isOpen={modalrOpen} onClose={toggleModal} />
     </header>
   );
 };

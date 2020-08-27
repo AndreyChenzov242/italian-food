@@ -8,18 +8,17 @@ import { CgShoppingCart } from 'react-icons/cg';
 
 // ----------------
 
-export const Basket = ({}) => {
+export const Basket = ({ onClick }) => {
   const [cookies] = useCookies(['shoppingData']);
 
   let counter = 0;
 
   if (Object.keys(cookies).length) {
-    var set = new Set(cookies.shoppingData);
-    counter = set.size;
+    counter = new Set(cookies.shoppingData).size;
   }
 
   return (
-    <div className="basket">
+    <div className="basket" onClick={onClick}>
       <ReactIcon size="xxxl" color="white">
         <CgShoppingCart />
       </ReactIcon>
