@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/italian-food/static/css/main.9b161c6c.chunk.css",
-    "main.js": "/italian-food/static/js/main.f9c6fb6e.chunk.js",
-    "main.js.map": "/italian-food/static/js/main.f9c6fb6e.chunk.js.map",
+    "main.js": "/italian-food/static/js/main.63bc744b.chunk.js",
+    "main.js.map": "/italian-food/static/js/main.63bc744b.chunk.js.map",
     "runtime-main.js": "/italian-food/static/js/runtime-main.5ed9a8b9.js",
     "runtime-main.js.map": "/italian-food/static/js/runtime-main.5ed9a8b9.js.map",
     "static/css/2.ba159d6b.chunk.css": "/italian-food/static/css/2.ba159d6b.chunk.css",
     "static/js/2.e026052c.chunk.js": "/italian-food/static/js/2.e026052c.chunk.js",
     "static/js/2.e026052c.chunk.js.map": "/italian-food/static/js/2.e026052c.chunk.js.map",
     "index.html": "/italian-food/index.html",
-    "precache-manifest.f797e29f308a9526e9eff0eec340b99b.js": "/italian-food/precache-manifest.f797e29f308a9526e9eff0eec340b99b.js",
+    "precache-manifest.73a1300e3d850dcdc017fcf937e74d7b.js": "/italian-food/precache-manifest.73a1300e3d850dcdc017fcf937e74d7b.js",
     "service-worker.js": "/italian-food/service-worker.js",
     "static/css/2.ba159d6b.chunk.css.map": "/italian-food/static/css/2.ba159d6b.chunk.css.map",
     "static/css/main.9b161c6c.chunk.css.map": "/italian-food/static/css/main.9b161c6c.chunk.css.map",
@@ -47,6 +47,6 @@
     "static/css/2.ba159d6b.chunk.css",
     "static/js/2.e026052c.chunk.js",
     "static/css/main.9b161c6c.chunk.css",
-    "static/js/main.f9c6fb6e.chunk.js"
+    "static/js/main.63bc744b.chunk.js"
   ]
 }
