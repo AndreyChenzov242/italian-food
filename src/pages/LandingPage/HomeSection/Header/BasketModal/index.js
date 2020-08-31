@@ -24,8 +24,9 @@ export const BasketModal = ({ isOpen, onClose }) => {
   const [cookies, setCookie] = useCookies(['shoppingData']);
 
   let shoppingItem = {};
-  let shoppingSetArray = [];
-  const counterOfSameShoppingItems = [];
+  let shoppingArrayOfObjects = [];
+  let counterOfSameShoppingItems = [];
+  let totalPrice = 0;
 
   if (Object.keys(cookies).length) {
     let shoppingArrayFromSet = Array.from(new Set(cookies.shoppingData));
@@ -35,7 +36,7 @@ export const BasketModal = ({ isOpen, onClose }) => {
         return e.id == shoppingArrayFromSet[index];
       });
 
-      shoppingSetArray[index] = { ...shoppingItem[0] };
+      shoppingArrayOfObjects[index] = { ...shoppingItem[0] };
 
       counterOfSameShoppingItems[index] = cookies.shoppingData.filter(function (
         e
@@ -43,10 +44,14 @@ export const BasketModal = ({ isOpen, onClose }) => {
         return e == shoppingArrayFromSet[index];
       });
 
-      Object.assign(shoppingSetArray[index], {
-        ...shoppingSetArray[index],
+      Object.assign(shoppingArrayOfObjects[index], {
+        ...shoppingArrayOfObjects[index],
         counter: counterOfSameShoppingItems[index].length,
       });
+
+      totalPrice +=
+        shoppingArrayOfObjects[index].price *
+        counterOfSameShoppingItems[index].length;
     }
   }
 
@@ -68,7 +73,7 @@ export const BasketModal = ({ isOpen, onClose }) => {
     });
   };
 
-  // console.log('cookies', cookies.shoppingData);
+  //
 
   return (
     <Modal
@@ -79,8 +84,8 @@ export const BasketModal = ({ isOpen, onClose }) => {
       titleIcon={CgShoppingCart}
       addModalClass="basket-modal"
     >
-      {shoppingSetArray &&
-        shoppingSetArray.map(shoppingItem => {
+      {shoppingArrayOfObjects &&
+        shoppingArrayOfObjects.map(shoppingItem => {
           return (
             <div className="basket-modal__card" key={shoppingItem.id}>
               <img
@@ -121,7 +126,8 @@ export const BasketModal = ({ isOpen, onClose }) => {
             </div>
           );
         })}
-      {!shoppingSetArray.length && <p>No item here</p>}
+      {!shoppingArrayOfObjects.length && <p>No item here</p>}
+      <p>Total Price: {totalPrice}$</p>
     </Modal>
   );
 };
