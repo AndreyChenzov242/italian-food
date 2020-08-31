@@ -25,37 +25,50 @@ export const BasketModal = ({ isOpen, onClose }) => {
 
   let shoppingItem = {};
   let shoppingSetArray = [];
-
-  //console.log(cookies.shoppingData);
+  const counterOfSameShoppingItems = [];
 
   if (Object.keys(cookies).length) {
-    var shoppingIsArray = Array.from(new Set(cookies.shoppingData));
+    let shoppingArrayFromSet = Array.from(new Set(cookies.shoppingData));
 
-    for (let index = 0; index < shoppingIsArray.length; index++) {
+    for (let index = 0; index < shoppingArrayFromSet.length; index++) {
       shoppingItem = menuData.filter(function (e) {
-        return e.id == shoppingIsArray[index];
+        return e.id == shoppingArrayFromSet[index];
       });
 
       shoppingSetArray[index] = { ...shoppingItem[0] };
-    }
 
-    const counterOfSameShoppingItems = [
-      // {
-      //   key: ,
-      //   value: '',
-      // },
-    ];
-
-    for (let index = 0; index < shoppingIsArray.length; index++) {
       counterOfSameShoppingItems[index] = cookies.shoppingData.filter(function (
         e
       ) {
-        return e == shoppingIsArray[index];
+        return e == shoppingArrayFromSet[index];
+      });
+
+      Object.assign(shoppingSetArray[index], {
+        ...shoppingSetArray[index],
+        counter: counterOfSameShoppingItems[index].length,
       });
     }
-
-    console.log(counterOfSameShoppingItems);
   }
+
+  const addShopingItem = id => {
+    setCookie('shoppingData', [...cookies.shoppingData, id], {
+      path: '/',
+    });
+  };
+
+  const delShopingItem = id => {
+    for (let index = 0; index < cookies.shoppingData.length; index++) {
+      if (cookies.shoppingData[index] == id) {
+        cookies.shoppingData.splice(index, 1);
+        break;
+      }
+    }
+    setCookie('shoppingData', [...cookies.shoppingData], {
+      path: '/',
+    });
+  };
+
+  // console.log('cookies', cookies.shoppingData);
 
   return (
     <Modal
@@ -78,26 +91,33 @@ export const BasketModal = ({ isOpen, onClose }) => {
               <div className="basket-modal__content-wrapper">
                 <div className="basket-modal__article">
                   <p className="basket-modal__title">{shoppingItem.title}</p>
-                  {/* <p className="basket-modal__descr">
-                    {shoppingItem.description}
-                  </p> */}
                 </div>
                 <div className="basket-modal__counter-wrapper">
                   <button>
-                    <ReactIcon size="xxxl" color="orange">
+                    <ReactIcon
+                      size="xxxl"
+                      color="orange"
+                      onClick={() => delShopingItem(shoppingItem.id)}
+                    >
                       <AiOutlineMinusCircle />
                     </ReactIcon>
                   </button>
-                  <div className="counter__text">2</div>
+                  <div className="counter__text">{shoppingItem.counter}</div>
                   <button>
-                    <ReactIcon size="xxxl" color="orange">
+                    <ReactIcon
+                      size="xxxl"
+                      color="orange"
+                      onClick={() => addShopingItem(shoppingItem.id)}
+                    >
                       <AiOutlinePlusCircle />
                     </ReactIcon>
                   </button>
                 </div>
               </div>
 
-              <p className="basket-modal__price">{shoppingItem.price}$</p>
+              <p className="basket-modal__price">
+                {shoppingItem.price * shoppingItem.counter}$
+              </p>
             </div>
           );
         })}

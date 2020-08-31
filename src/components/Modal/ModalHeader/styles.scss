@@ -30,4 +30,12 @@
     margin-left: 12px;
     color: #f47262;
   }
+
+  &__close-btn {
+    transition: transform 0.2s;
+
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
 }
