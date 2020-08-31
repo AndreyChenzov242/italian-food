@@ -37,7 +37,7 @@ export const Header = () => {
       <div className="header__content-wrapper">
         <Navbar list={navbarList} />
         <form className="header__search-form search-form">
-          <input type="text" className="header__input search-form__input" />
+          <input type="text" className="search-form__input" />
           <button>
             <Search />
           </button>

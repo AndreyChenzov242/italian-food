@@ -26,6 +26,10 @@
     color: $grey-2;
     flex: 1 1;
 
+    &:hover {
+      color: #000;
+    }
+
     p {
       font-weight: 700;
       margin-right: 12px;

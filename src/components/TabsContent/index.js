@@ -37,11 +37,14 @@ export const TabsContent = ({ tabsContentData }) => {
           <div className="menu__card card" key={tabsItem.id}>
             <p className="card__title">{tabsItem.title}</p>
             <p className="card__descr">{tabsItem.description}</p>
-            <img
-              className="card__img"
-              src={tabsItem.img}
-              alt={tabsItem.title}
-            />
+            <div className="card__img-wrapper">
+              <img
+                className="card__img"
+                src={tabsItem.img}
+                alt={tabsItem.title}
+              />
+            </div>
+
             <p className="card__price">Price: {tabsItem.price}$</p>
             <Button color="orange" onClick={() => addShopingItem(tabsItem.id)}>
               Add

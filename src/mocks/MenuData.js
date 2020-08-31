@@ -30,16 +30,16 @@ export const menuData = [
     title: 'Four seasons',
     name: 'pizza',
     description:
-      'Lorem ipsum dolor amet consectetur  adipisicingsed do eiusmod tempor',
+      'Lorem ipsum dolor amet consectetur  adipisicingsed do eiusmod tempor do eiusmod tempor do eiusmod tempor',
     img: pizza4Seasons,
     price: '31',
   },
   {
     id: '2',
-    title: 'Bavarian',
+    title: 'Bavarian pizza with large volcanic sides',
     name: 'pizza',
     description:
-      'Lorem ipsum dolor amet consectetur  adipisicingsed do eiusmod tempor',
+      'Lorem ipsum dolor amet consectetur  adipisicingsed do eiusmod tempor do eiusmod tempor do eiusmod tempor',
     img: pizzaBavar,
     price: '25',
   },

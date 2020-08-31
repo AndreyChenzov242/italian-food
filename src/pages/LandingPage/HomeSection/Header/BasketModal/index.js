@@ -38,21 +38,24 @@ export const BasketModal = ({ isOpen, onClose }) => {
 
       shoppingSetArray[index] = { ...shoppingItem[0] };
     }
+
+    const counterOfSameShoppingItems = [
+      // {
+      //   key: ,
+      //   value: '',
+      // },
+    ];
+
+    for (let index = 0; index < shoppingIsArray.length; index++) {
+      counterOfSameShoppingItems[index] = cookies.shoppingData.filter(function (
+        e
+      ) {
+        return e == shoppingIsArray[index];
+      });
+    }
+
+    console.log(counterOfSameShoppingItems);
   }
-
-  //console.log(shoppingSetArray.length == 0);
-
-  // const counterOfSameShoppingItems = [];
-
-  // for (let index = 0; index < shoppingIsArray.length; index++) {
-  //   counterOfSameShoppingItems[index] = cookies.shoppingData.filter(function (
-  //     e
-  //   ) {
-  //     return e == shoppingIsArray[index];
-  //   });
-  // }
-
-  // console.log(counterOfSameShoppingItems);
 
   return (
     <Modal
@@ -75,9 +78,9 @@ export const BasketModal = ({ isOpen, onClose }) => {
               <div className="basket-modal__content-wrapper">
                 <div className="basket-modal__article">
                   <p className="basket-modal__title">{shoppingItem.title}</p>
-                  <p className="basket-modal__descr">
+                  {/* <p className="basket-modal__descr">
                     {shoppingItem.description}
-                  </p>
+                  </p> */}
                 </div>
                 <div className="basket-modal__counter-wrapper">
                   <button>

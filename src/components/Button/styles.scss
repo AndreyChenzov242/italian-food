@@ -10,7 +10,7 @@
   border: 2px solid;
   border-radius: 25px;
   cursor: pointer;
-  transition: all 0.5s;
+  transition: color 0.5s, background-color 0.5s;
   font-weight: bold;
   font-family: 'Raleway', sans-serif;
 
@@ -90,17 +90,15 @@
       border-color: $orange;
       background-color: $orange;
       color: #ffffff;
-      @media screen and (min-width: 1025px) {
-        @include btn-hover(rgba(0, 0, 0, 0), $orange, $orange);
-      }
+
+      @include btn-hover(rgba(0, 0, 0, 0), $orange, $orange);
     }
     &.button--color-white {
       border-color: #fff;
       background-color: #fff;
       color: $dark-blue;
-      @media screen and (min-width: 1025px) {
-        @include btn-hover(rgba(0, 0, 0, 0), $text-color, #ffffff);
-      }
+
+      @include btn-hover(rgba(0, 0, 0, 0), $text-color, #ffffff);
     }
   }
 
@@ -108,16 +106,14 @@
     &.button--color-orange {
       border-color: $orange;
       color: $orange;
-      @media screen and (min-width: 1025px) {
-        @include btn-hover($orange, $dark-blue, $orange);
-      }
+
+      @include btn-hover($orange, $dark-blue, $orange);
     }
     &.button--color-white {
       border-color: #fff;
       color: $text-color;
-      @media screen and (min-width: 1025px) {
-        @include btn-hover(#ffffff, $dark-blue, #ffffff);
-      }
+
+      @include btn-hover(#ffffff, $dark-blue, #ffffff);
     }
   }
 

@@ -46,15 +46,10 @@
   .basket {
     cursor: pointer;
     position: relative;
-  }
-}
+    transition: transform 0.3s;
 
-body.overflow-hidden {
-  .header {
-    padding-right: 49px;
-
-    @media screen and (max-width: $breakpoint-up-sm) {
-      padding-right: 24px;
+    &:hover {
+      transform: translateY(-3px);
     }
   }
 }

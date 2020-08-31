@@ -9,7 +9,7 @@
   color: #fff;
 
   @media screen and (max-width: $breakpoint-up-lg) {
-    grid-template-columns: repeat(auto-fit, minmax(75px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
   }
 
   &__text {
