@@ -4,7 +4,6 @@ import React from 'react';
 
 import types from 'prop-types';
 import classNames from 'classnames';
-import { useCookies } from 'react-cookie';
 
 // Components
 
@@ -17,9 +16,12 @@ import './styles.scss';
 
 // ----------------
 
-export const CounterOfShoppingItems = ({ onAdd, onDel, className, id }) => {
-  const [cookies] = useCookies(['shoppingData']);
-
+export const CounterOfShoppingItems = ({
+  onAdd,
+  onDel,
+  counter,
+  className,
+}) => {
   const counterClass = classNames(
     {
       [`counter-wrapper`]: true,
@@ -27,13 +29,6 @@ export const CounterOfShoppingItems = ({ onAdd, onDel, className, id }) => {
     className
   );
 
-  let counter = 0;
-
-  if (cookies.shoppingData) {
-    counter = cookies.shoppingData.filter(function (e) {
-      return e == id;
-    });
-  }
   return (
     <div className={counterClass}>
       <button>
@@ -41,7 +36,7 @@ export const CounterOfShoppingItems = ({ onAdd, onDel, className, id }) => {
           <AiOutlineMinusCircle />
         </ReactIcon>
       </button>
-      <div className="counter__text">{counter.length}</div>
+      <div className="counter__text">{counter}</div>
       <button>
         <ReactIcon size="xxxl" color="orange" onClick={onAdd}>
           <AiOutlinePlusCircle />
@@ -54,7 +49,7 @@ export const CounterOfShoppingItems = ({ onAdd, onDel, className, id }) => {
 CounterOfShoppingItems.propTypes = {
   onAdd: types.func.isRequired,
   onDel: types.func.isRequired,
-  //counter: types.number.isRequired,
+  counter: types.string.isRequired,
   className: types.string,
 };
 

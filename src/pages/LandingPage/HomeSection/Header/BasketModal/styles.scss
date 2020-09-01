@@ -1,4 +1,5 @@
 @import '../../../../../styles/configs.scss';
+@import '../../../../../styles/colors.scss';
 
 .basket {
   &-modal {
@@ -66,6 +67,21 @@
         margin-left: 0;
         margin-top: 12px;
       }
+    }
+
+    &__total-price {
+      font-size: 2rem;
+      font-family: sans-serif;
+      text-align: end;
+
+      span {
+        color: $orange;
+      }
+    }
+
+    &__footer {
+      display: flex;
+      justify-content: space-between;
     }
   }
 }

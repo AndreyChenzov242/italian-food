@@ -19,15 +19,19 @@ export const Button = ({
   color,
   onClick,
   uppercase,
+  className,
 }) => {
-  const buttonClass = classNames({
-    button: true,
-    [`button--size-${size}`]: size,
-    [`button--uppercase`]: uppercase,
-    [`button--${margin}`]: margin,
-    [`button--color-${color}`]: color,
-    [`button--variant-${variant}`]: variant,
-  });
+  const buttonClass = classNames(
+    {
+      button: true,
+      [`button--size-${size}`]: size,
+      [`button--uppercase`]: uppercase,
+      [`button--${margin}`]: margin,
+      [`button--color-${color}`]: color,
+      [`button--variant-${variant}`]: variant,
+    },
+    className
+  );
 
   return (
     <button className={buttonClass} onClick={onClick}>

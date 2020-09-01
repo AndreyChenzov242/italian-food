@@ -51,7 +51,7 @@ export const TabsContent = ({ tabsContentData }) => {
             {tabsContentData[index].counter.length > 0 && (
               <CounterOfShoppingItems
                 className="card__counter-wrapper"
-                // counter={tabsContentData[index].counter.length}
+                counter={tabsContentData[index].counter.length}
                 id={tabsItem.id}
                 onAdd={() => addShopingItem(tabsItem.id, cookies, setCookie)}
                 onDel={() => delShopingItem(tabsItem.id, cookies, setCookie)}
