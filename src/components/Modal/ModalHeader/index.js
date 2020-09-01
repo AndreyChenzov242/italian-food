@@ -3,6 +3,7 @@ import React from 'react';
 // Modules
 
 import { CgClose } from 'react-icons/cg';
+import { FaRegTrashAlt } from 'react-icons/fa';
 
 // Components
 
@@ -15,7 +16,7 @@ import './styles.scss';
 // ----------------
 
 export const ModalHeader = props => {
-  const { onClose, title, titleIcon } = props;
+  const { onClose, title, titleIcon, onClear } = props;
 
   return onClose || title || titleIcon ? (
     <div className="modal-header">
@@ -39,6 +40,14 @@ export const ModalHeader = props => {
         >
           <CgClose />
         </ReactIcon>
+      )}
+      {onClear && (
+        <div className="modal-header__clear-btn" onClick={onClear}>
+          <ReactIcon size="md">
+            <FaRegTrashAlt />
+          </ReactIcon>
+          <div className="clear-btn__text">Clear basket</div>
+        </div>
       )}
     </div>
   ) : null;

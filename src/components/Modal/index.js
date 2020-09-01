@@ -26,6 +26,7 @@ export const Modal = ({
   isOpen,
   titleIcon,
   addModalClass,
+  onClear,
 }) => {
   useEffect(() => {
     if (isOpen) {
@@ -59,6 +60,7 @@ export const Modal = ({
           {(title || (closeIcon && onClose)) && (
             <ModalHeader
               onClose={onClose}
+              onClear={onClear}
               title={title}
               titleIcon={titleIcon}
             />

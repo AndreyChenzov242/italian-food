@@ -4,6 +4,11 @@ import React from 'react';
 
 import types from 'prop-types';
 import { useCookies } from 'react-cookie';
+import {
+  addShopingItem,
+  delShopingItem,
+  delAllShoppingItems,
+} from '../../../../../сookie/setCookie';
 
 // Components
 
@@ -55,25 +60,29 @@ export const BasketModal = ({ isOpen, onClose }) => {
     }
   }
 
-  const addShopingItem = id => {
-    setCookie('shoppingData', [...cookies.shoppingData, id], {
-      path: '/',
-    });
-  };
+  // const addShopingItem = id => {
+  //   setCookie('shoppingData', [...cookies.shoppingData, id], {
+  //     path: '/',
+  //   });
+  // };
 
-  const delShopingItem = id => {
-    for (let index = cookies.shoppingData.length; index >= 0; index--) {
-      if (cookies.shoppingData[index] == id) {
-        cookies.shoppingData.splice(index, 1);
-        break;
-      }
-    }
-    setCookie('shoppingData', [...cookies.shoppingData], {
-      path: '/',
-    });
-  };
+  // const delShopingItem = id => {
+  //   for (let index = cookies.shoppingData.length; index >= 0; index--) {
+  //     if (cookies.shoppingData[index] == id) {
+  //       cookies.shoppingData.splice(index, 1);
+  //       break;
+  //     }
+  //   }
+  //   setCookie('shoppingData', [...cookies.shoppingData], {
+  //     path: '/',
+  //   });
+  // };
 
-  console.log(cookies.shoppingData);
+  // const delAllShoppingItems = () => {
+  //   setCookie('shoppingData', [], {
+  //     path: '/',
+  //   });
+  // };
 
   return (
     <Modal
@@ -83,6 +92,7 @@ export const BasketModal = ({ isOpen, onClose }) => {
       title="Basket"
       titleIcon={CgShoppingCart}
       addModalClass="basket-modal"
+      onClear={() => delAllShoppingItems(setCookie)}
     >
       {shoppingArrayOfObjects &&
         shoppingArrayOfObjects.map(shoppingItem => {
@@ -102,7 +112,9 @@ export const BasketModal = ({ isOpen, onClose }) => {
                     <ReactIcon
                       size="xxxl"
                       color="orange"
-                      onClick={() => delShopingItem(shoppingItem.id)}
+                      onClick={() =>
+                        delShopingItem(shoppingItem.id, cookies, setCookie)
+                      }
                     >
                       <AiOutlineMinusCircle />
                     </ReactIcon>
@@ -112,7 +124,9 @@ export const BasketModal = ({ isOpen, onClose }) => {
                     <ReactIcon
                       size="xxxl"
                       color="orange"
-                      onClick={() => addShopingItem(shoppingItem.id)}
+                      onClick={() =>
+                        addShopingItem(shoppingItem.id, cookies, setCookie)
+                      }
                     >
                       <AiOutlinePlusCircle />
                     </ReactIcon>
