@@ -62,7 +62,7 @@ export const BasketModal = ({ isOpen, onClose }) => {
   };
 
   const delShopingItem = id => {
-    for (let index = 0; index < cookies.shoppingData.length; index++) {
+    for (let index = cookies.shoppingData.length - 1; index > 0; index--) {
       if (cookies.shoppingData[index] == id) {
         cookies.shoppingData.splice(index, 1);
         break;
@@ -72,8 +72,6 @@ export const BasketModal = ({ isOpen, onClose }) => {
       path: '/',
     });
   };
-
-  //
 
   return (
     <Modal

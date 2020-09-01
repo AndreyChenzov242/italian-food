@@ -24,10 +24,10 @@
 
     &__price {
       align-self: center;
-      font-size: 2rem;
+      font-size: 1.8rem;
       margin: 0 32px;
       font-family: sans-serif;
-      min-width: 54px;
+      min-width: 64px;
       text-align: center;
 
       @media screen and (max-width: $breakpoint-up-sm) {
