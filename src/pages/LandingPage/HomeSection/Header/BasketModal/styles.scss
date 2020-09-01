@@ -71,6 +71,10 @@
       .react-icon:hover {
         color: red;
       }
+
+      .react-icon:active {
+        transform: translateY(1px);
+      }
     }
 
     .counter__text {
