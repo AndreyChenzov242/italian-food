@@ -33,6 +33,7 @@ export const menuData = [
       'Lorem ipsum dolor amet consectetur  adipisicingsed do eiusmod tempor do eiusmod tempor do eiusmod tempor',
     img: pizza4Seasons,
     price: '31',
+    counter: 0,
   },
   {
     id: '2',
@@ -42,6 +43,7 @@ export const menuData = [
       'Lorem ipsum dolor amet consectetur  adipisicingsed do eiusmod tempor do eiusmod tempor do eiusmod tempor',
     img: pizzaBavar,
     price: '25',
+    counter: 0,
   },
   {
     id: '3',
@@ -51,6 +53,7 @@ export const menuData = [
       'Lorem ipsum dolor amet consectetur  adipisicingsed do eiusmod tempor',
     img: pizzaFermers,
     price: '23',
+    counter: 0,
   },
   {
     id: '4',
@@ -60,6 +63,7 @@ export const menuData = [
       'Lorem ipsum dolor amet consectetur  adipisicingsed do eiusmod tempor',
     img: pizzaHawaiian,
     price: '30',
+    counter: 0,
   },
   {
     id: '5',
@@ -69,6 +73,7 @@ export const menuData = [
       'Lorem ipsum dolor amet consectetur  adipisicingsed do eiusmod tempor',
     img: pizzaKaprichoze,
     price: '22',
+    counter: 0,
   },
   {
     id: '6',
@@ -78,6 +83,7 @@ export const menuData = [
       'Lorem ipsum dolor amet consectetur  adipisicingsed do eiusmod tempor',
     img: pastakarbonara,
     price: '12',
+    counter: 0,
   },
   {
     id: '7',
@@ -87,6 +93,7 @@ export const menuData = [
       'Lorem ipsum dolor amet consectetur  adipisicingsed do eiusmod tempor',
     img: pastaShrimp,
     price: '10',
+    counter: 0,
   },
   {
     id: '8',
@@ -96,6 +103,8 @@ export const menuData = [
       'Lorem ipsum dolor amet consectetur  adipisicingsed do eiusmod tempor',
     img: pastaSalmon,
     price: '8',
+
+    counter: 0,
   },
   {
     id: '9',
@@ -105,6 +114,7 @@ export const menuData = [
       'Lorem ipsum dolor amet consectetur  adipisicingsed do eiusmod tempor',
     img: pastaBecon,
     price: '17',
+    counter: 0,
   },
   {
     id: '10',
@@ -114,6 +124,7 @@ export const menuData = [
       'Lorem ipsum dolor amet consectetur  adipisicingsed do eiusmod tempor',
     img: pastaTalyatte,
     price: '15',
+    counter: 0,
   },
   {
     id: '11',
@@ -123,6 +134,7 @@ export const menuData = [
       'Lorem ipsum dolor amet consectetur  adipisicingsed do eiusmod tempor',
     img: pastaVeal,
     price: '11',
+    counter: 0,
   },
   {
     id: '12',
@@ -132,6 +144,7 @@ export const menuData = [
       'Lorem ipsum dolor amet consectetur  adipisicingsed do eiusmod tempor',
     img: pastaTalyatteChiken,
     price: '22',
+    counter: 0,
   },
   {
     id: '13',
@@ -141,6 +154,8 @@ export const menuData = [
       'Lorem ipsum dolor amet consectetur  adipisicingsed do eiusmod tempor',
     img: soupChiken,
     price: '8',
+
+    counter: 0,
   },
   {
     id: '14',
@@ -150,6 +165,8 @@ export const menuData = [
       'Lorem ipsum dolor amet consectetur  adipisicingsed do eiusmod tempor',
     img: soupFadjoli,
     price: '7',
+
+    counter: 0,
   },
 
   {
@@ -160,6 +177,8 @@ export const menuData = [
       'Lorem ipsum dolor amet consectetur  adipisicingsed do eiusmod tempor',
     img: soupKachuko,
     price: '5',
+
+    counter: 0,
   },
   {
     id: '16',
@@ -169,6 +188,7 @@ export const menuData = [
       'Lorem ipsum dolor amet consectetur  adipisicingsed do eiusmod tempor',
     img: soupMinitrone,
     price: '10',
+    counter: 0,
   },
   {
     id: '17',
@@ -178,6 +198,7 @@ export const menuData = [
       'Lorem ipsum dolor amet consectetur  adipisicingsed do eiusmod tempor',
     img: saladGreece,
     price: '15',
+    counter: 0,
   },
   {
     id: '18',
@@ -187,6 +208,7 @@ export const menuData = [
       'Lorem ipsum dolor amet consectetur  adipisicingsed do eiusmod tempor',
     img: saladKarpeze,
     price: '12',
+    counter: 0,
   },
 
   {
@@ -197,6 +219,7 @@ export const menuData = [
       'Lorem ipsum dolor amet consectetur  adipisicingsed do eiusmod tempor',
     img: saladLanget,
     price: '25',
+    counter: 0,
   },
   {
     id: '20',
@@ -206,6 +229,7 @@ export const menuData = [
       'Lorem ipsum dolor amet consectetur  adipisicingsed do eiusmod tempor',
     img: saladMeal,
     price: '16',
+    counter: 0,
   },
   {
     id: '21',
@@ -215,6 +239,8 @@ export const menuData = [
       'Lorem ipsum dolor amet consectetur  adipisicingsed do eiusmod tempor',
     img: saladSalmon,
     price: '9',
+
+    counter: 0,
   },
   {
     id: '22',
@@ -224,6 +250,7 @@ export const menuData = [
       'Lorem ipsum dolor amet consectetur  adipisicingsed do eiusmod tempor',
     img: saladCaesar,
     price: '16',
+    counter: 0,
   },
 ];
 

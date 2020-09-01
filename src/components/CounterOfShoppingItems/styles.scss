@@ -1,0 +1,25 @@
+@import '../../styles/configs.scss';
+@import '../../styles/mixins.scss';
+@import '../../styles/animations.scss';
+
+.counter-wrapper {
+  display: flex;
+
+  .react-icon:hover {
+    color: red;
+  }
+
+  .react-icon:active {
+    transform: translateY(1px);
+  }
+}
+
+.counter__text {
+  font-size: 20px;
+  align-self: center;
+  padding: 0 8px;
+  font-weight: bold;
+  font-family: sans-serif;
+  min-width: 38px;
+  text-align: center;
+}

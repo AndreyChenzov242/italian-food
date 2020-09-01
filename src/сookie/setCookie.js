@@ -1,7 +1,13 @@
 export const addShopingItem = (id, cookies, setCookie) => {
-  setCookie('shoppingData', [...cookies.shoppingData, id], {
-    path: '/',
-  });
+  if (Object.keys(cookies).length) {
+    setCookie('shoppingData', [...cookies.shoppingData, id], {
+      path: '/',
+    });
+  } else {
+    setCookie('shoppingData', [id], {
+      path: '/',
+    });
+  }
 };
 
 export const delShopingItem = (id, cookies, setCookie) => {

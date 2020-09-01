@@ -84,6 +84,10 @@
       max-height: calc(100vh - 93px);
     }
 
+    @media screen and (max-width: $breakpoint-up-sm) {
+      padding: 0 16px 16px 16px;
+    }
+
     &--no-padding {
       padding: 0;
     }

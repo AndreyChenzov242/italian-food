@@ -8,6 +8,10 @@
   display: flex;
   align-items: center;
 
+  @media screen and (max-width: $breakpoint-up-sm) {
+    padding: 24px 48px 0 16px;
+  }
+
   &__close-btn {
     transition: color $anim-time;
     position: absolute;

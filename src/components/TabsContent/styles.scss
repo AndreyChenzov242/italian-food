@@ -6,11 +6,11 @@
   grid-template-columns: repeat(3, 1fr);
   gap: 48px;
 
-  @media screen and(max-width:$breakpoint-up-md) {
+  @media screen and(max-width:$breakpoint-down-md) {
     grid-template-columns: repeat(2, 1fr);
     gap: 32px;
   }
-  @media screen and(max-width:$breakpoint-up-sm) {
+  @media screen and(max-width:$breakpoint-down-sm) {
     grid-template-columns: 1fr;
     gap: 24px;
   }

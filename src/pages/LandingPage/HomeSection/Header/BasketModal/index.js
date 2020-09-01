@@ -18,6 +18,7 @@ import { Button } from '../../../../../components/Button';
 import { CgShoppingCart } from 'react-icons/cg';
 import { ReactIcon } from '../../../../../components/ReactIcon';
 import { menuData } from '../../../../../mocks/menuData';
+import { CounterOfShoppingItems } from '../../../../../components/CounterOfShoppingItems';
 
 // Styles
 
@@ -60,30 +61,6 @@ export const BasketModal = ({ isOpen, onClose }) => {
     }
   }
 
-  // const addShopingItem = id => {
-  //   setCookie('shoppingData', [...cookies.shoppingData, id], {
-  //     path: '/',
-  //   });
-  // };
-
-  // const delShopingItem = id => {
-  //   for (let index = cookies.shoppingData.length; index >= 0; index--) {
-  //     if (cookies.shoppingData[index] == id) {
-  //       cookies.shoppingData.splice(index, 1);
-  //       break;
-  //     }
-  //   }
-  //   setCookie('shoppingData', [...cookies.shoppingData], {
-  //     path: '/',
-  //   });
-  // };
-
-  // const delAllShoppingItems = () => {
-  //   setCookie('shoppingData', [], {
-  //     path: '/',
-  //   });
-  // };
-
   return (
     <Modal
       isOpen={isOpen}
@@ -107,31 +84,16 @@ export const BasketModal = ({ isOpen, onClose }) => {
                 <div className="basket-modal__article">
                   <p className="basket-modal__title">{shoppingItem.title}</p>
                 </div>
-                <div className="basket-modal__counter-wrapper">
-                  <button>
-                    <ReactIcon
-                      size="xxxl"
-                      color="orange"
-                      onClick={() =>
-                        delShopingItem(shoppingItem.id, cookies, setCookie)
-                      }
-                    >
-                      <AiOutlineMinusCircle />
-                    </ReactIcon>
-                  </button>
-                  <div className="counter__text">{shoppingItem.counter}</div>
-                  <button>
-                    <ReactIcon
-                      size="xxxl"
-                      color="orange"
-                      onClick={() =>
-                        addShopingItem(shoppingItem.id, cookies, setCookie)
-                      }
-                    >
-                      <AiOutlinePlusCircle />
-                    </ReactIcon>
-                  </button>
-                </div>
+                <CounterOfShoppingItems
+                  className="basket-modal__counter-wrapper"
+                  id={shoppingItem.id}
+                  onAdd={() =>
+                    addShopingItem(shoppingItem.id, cookies, setCookie)
+                  }
+                  onDel={() =>
+                    delShopingItem(shoppingItem.id, cookies, setCookie)
+                  }
+                />
               </div>
 
               <p className="basket-modal__price">

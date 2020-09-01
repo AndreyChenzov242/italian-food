@@ -60,38 +60,12 @@
     }
 
     &__counter-wrapper {
-      display: flex;
       margin-left: auto;
 
       @media screen and (max-width: $breakpoint-up-xs) {
         margin-left: 0;
         margin-top: 12px;
       }
-
-      .react-icon:hover {
-        color: red;
-      }
-
-      .react-icon:active {
-        transform: translateY(1px);
-      }
-    }
-
-    .counter__text {
-      font-size: 20px;
-      align-self: center;
-      padding: 0 8px;
-      font-weight: bold;
-      font-family: sans-serif;
-      min-width: 38px;
-      text-align: center;
-    }
-
-    .modal__body {
-      padding: 0 16px 16px 16px;
-    }
-    .modal__header {
-      padding: 16px 40px 0 16px;
     }
   }
 }
