@@ -35,7 +35,7 @@ export const Header = () => {
         <img src={logo} alt="logo" />
       </a>
       <div className="header__content-wrapper">
-        <Navbar list={navbarList} />
+        <Navbar navbarList={navbarList} />
         <form className="header__search-form search-form">
           <input type="text" className="search-form__input" />
           <button>
@@ -44,7 +44,11 @@ export const Header = () => {
         </form>
       </div>
       <HamburgerButton onClick={toggleSidebar} isOpen={sidebarOpen} />
-      <Sidebar list={navbarList} open={sidebarOpen} onClick={toggleSidebar} />
+      <Sidebar
+        navbarList={navbarList}
+        open={sidebarOpen}
+        onClick={toggleSidebar}
+      />
       <Basket onClick={toggleModal} />
       <BasketModal isOpen={modalrOpen} onClose={toggleModal} />
     </header>

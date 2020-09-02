@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 
 // Modules
 
+import { Link } from 'react-scroll';
 import classNames from 'classnames';
 import PropTypes from 'prop-types';
 
@@ -15,7 +16,7 @@ import './styles.scss';
 
 //-------------
 
-export const Sidebar = ({ list, open, onClick }) => {
+export const Sidebar = ({ navbarList, open, onClick }) => {
   useEffect(() => {
     if (open) {
       document.body.setAttribute('class', 'overflow-hidden');
@@ -33,16 +34,16 @@ export const Sidebar = ({ list, open, onClick }) => {
     <div className={sidebarClass}>
       <div className="sidebar-wrapper">
         <nav className="sidebar__nav">
-          {list.map((item, index) => {
+          {navbarList.map((item, index) => {
             return (
-              <a
-                href={`#${item.to}`}
+              <Link
+                className="sidebar__item"
+                to={item.to}
                 key={index}
                 onClick={onClick}
-                className="sidebar__item"
               >
                 {item.name}
-              </a>
+              </Link>
             );
           })}
         </nav>
@@ -62,7 +63,7 @@ export const Sidebar = ({ list, open, onClick }) => {
 // Type of props
 
 Sidebar.propTypes = {
-  list: PropTypes.array.isRequired,
+  navbarList: PropTypes.array.isRequired,
   open: PropTypes.bool.isRequired,
   onClick: PropTypes.func,
 };

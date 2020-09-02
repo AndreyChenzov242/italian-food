@@ -11,10 +11,10 @@ import './styles.scss';
 
 // ----------------
 
-export const Navbar = ({ list }) => {
+export const Navbar = ({ navbarList }) => {
   return (
     <nav className="navbar">
-      {list.map((item, index) => {
+      {navbarList.map((item, index) => {
         return (
           <Fragment key={index}>
             <Link
@@ -36,5 +36,5 @@ export const Navbar = ({ list }) => {
 // Type of props
 
 Navbar.propTypes = {
-  list: types.array.isRequired,
+  navbarList: types.array.isRequired,
 };

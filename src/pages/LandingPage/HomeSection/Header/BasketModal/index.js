@@ -75,11 +75,14 @@ export const BasketModal = ({ isOpen, onClose }) => {
         shoppingArrayOfObjects.map(shoppingItem => {
           return (
             <div className="basket-modal__card" key={shoppingItem.id}>
-              <img
-                className="basket-modal__img"
-                src={shoppingItem.img}
-                alt={shoppingItem.title}
-              />
+              <div className="basket-modal__img-wrapper">
+                <img
+                  className="basket-modal__img"
+                  src={shoppingItem.img}
+                  alt={shoppingItem.title}
+                />
+              </div>
+
               <div className="basket-modal__content-wrapper">
                 <div className="basket-modal__article">
                   <p className="basket-modal__title">{shoppingItem.title}</p>
