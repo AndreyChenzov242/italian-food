@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "a1b50845274efe44b996c315427c35a6",
+    "revision": "f3e696a55a594e63b51af60ffd7cd351",
     "url": "/italian-food/index.html"
   },
   {
-    "revision": "4147653a54a2e4959d1f",
+    "revision": "292a573d98af39a52060",
     "url": "/italian-food/static/css/2.ba159d6b.chunk.css"
   },
   {
-    "revision": "dff7d29f74b104b8d502",
-    "url": "/italian-food/static/css/main.9023d956.chunk.css"
+    "revision": "77e0009b3a024835533f",
+    "url": "/italian-food/static/css/main.13ef4170.chunk.css"
   },
   {
-    "revision": "4147653a54a2e4959d1f",
-    "url": "/italian-food/static/js/2.51184693.chunk.js"
+    "revision": "292a573d98af39a52060",
+    "url": "/italian-food/static/js/2.c9ad6323.chunk.js"
   },
   {
     "revision": "2db80ee6e43bb57ab10aefd739542bd4",
-    "url": "/italian-food/static/js/2.51184693.chunk.js.LICENSE.txt"
+    "url": "/italian-food/static/js/2.c9ad6323.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "dff7d29f74b104b8d502",
-    "url": "/italian-food/static/js/main.c9b1d362.chunk.js"
+    "revision": "77e0009b3a024835533f",
+    "url": "/italian-food/static/js/main.0cdd7185.chunk.js"
   },
   {
     "revision": "9091bf4d9cb6d499e443",
@@ -148,7 +148,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/italian-food/static/media/soup-kachuko.476e8ff0.jpg"
   },
   {
-    "revision": "ed9bf351ded38250ca7dd00423349b94",
-    "url": "/italian-food/static/media/soup-minitrone.ed9bf351.jpg"
+    "revision": "729e3779e05beb32bb05a9033824e278",
+    "url": "/italian-food/static/media/soup-minitrone.729e3779.jpg"
   }
 ]);
