@@ -69,19 +69,30 @@
       }
     }
 
+    &__footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
     &__total-price {
       font-size: 2rem;
       font-family: sans-serif;
       text-align: end;
 
+      @media screen and (max-width: $breakpoint-up-xs) {
+        font-size: 1.5rem;
+      }
+
       span {
         color: $orange;
       }
     }
-
-    &__footer {
-      display: flex;
-      justify-content: space-between;
+    &__buy-btn {
+      @media screen and (max-width: $breakpoint-up-xs) {
+        font-size: 1.5rem;
+        min-width: 135px;
+        min-height: auto;
+      }
     }
   }
 }

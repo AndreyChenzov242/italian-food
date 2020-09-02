@@ -46,7 +46,7 @@ export const ModalHeader = props => {
           <ReactIcon size="md">
             <FaRegTrashAlt />
           </ReactIcon>
-          <div className="clear-btn__text">Clear basket</div>
+          <div className="clear-btn__text">Clear</div>
         </div>
       )}
     </div>
