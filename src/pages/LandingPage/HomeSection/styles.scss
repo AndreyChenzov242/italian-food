@@ -12,6 +12,10 @@
   align-items: center;
   justify-content: center;
 
+  @media screen and (max-width: $breakpoint-up-sm) {
+    background-image: url(../../../assets/images/home-bg-mobile.jpg);
+  }
+
   &__content {
     width: 100%;
     max-width: 470px;
