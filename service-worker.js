@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/italian-food/precache-manifest.b8042dfa12554e7a112890fe8087953e.js"
+  "/italian-food/precache-manifest.3b9dfea8e2f22392f8b19f7fe54a90bf.js"
 );
 
 self.addEventListener('message', (event) => {
