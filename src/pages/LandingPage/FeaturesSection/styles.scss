@@ -10,6 +10,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
+  @media screen and (max-width: $breakpoint-up-sm) {
+    background-image: url('../../../assets/images/features-bg-mobile.jpg');
+  }
+
   &__title {
     color: #fff;
 
