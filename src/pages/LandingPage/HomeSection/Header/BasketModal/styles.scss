@@ -3,10 +3,32 @@
 
 .basket {
   &-modal {
+    &__body {
+      padding: 0 24px;
+      max-height: 80vh;
+      overflow-y: auto;
+
+      @media screen and (max-width: $breakpoint-up-xs) {
+        max-height: calc(100vh - 166px);
+      }
+
+      @media screen and (max-width: $breakpoint-up-sm) {
+        padding: 0 16px;
+      }
+
+      &--no-padding {
+        padding: 0;
+      }
+    }
+
     &__card {
       display: flex;
       margin-bottom: 24px;
       align-items: center;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
     }
 
     &__title {
@@ -83,7 +105,13 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
+      padding: 24px;
+
+      @media screen and (max-width: $breakpoint-up-sm) {
+        padding: 24px 16px 16px 16px;
+      }
     }
+
     &__total-price {
       font-size: 2rem;
       font-family: sans-serif;
@@ -102,6 +130,14 @@
         font-size: 1.5rem;
         min-width: 135px;
         min-height: auto;
+      }
+    }
+
+    &__no-items {
+      padding: 0 24px;
+
+      @media screen and (max-width: $breakpoint-up-sm) {
+        padding: 0 16px;
       }
     }
   }

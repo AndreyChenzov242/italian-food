@@ -66,7 +66,7 @@ export const Modal = ({
             />
           )}
 
-          <div className={modalBodyClass}>{children}</div>
+          {children}
         </div>
 
         <div className="modal__backdrop" onClick={onClose} />

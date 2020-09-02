@@ -71,40 +71,44 @@ export const BasketModal = ({ isOpen, onClose }) => {
       addModalClass="basket-modal"
       onClear={() => delAllShoppingItems(setCookie)}
     >
-      {shoppingArrayOfObjects &&
-        shoppingArrayOfObjects.map(shoppingItem => {
-          return (
-            <div className="basket-modal__card" key={shoppingItem.id}>
-              <div className="basket-modal__img-wrapper">
-                <img
-                  className="basket-modal__img"
-                  src={shoppingItem.img}
-                  alt={shoppingItem.title}
-                />
-              </div>
-
-              <div className="basket-modal__content-wrapper">
-                <div className="basket-modal__article">
-                  <p className="basket-modal__title">{shoppingItem.title}</p>
+      {shoppingArrayOfObjects.length > 0 && (
+        <div className="basket-modal__body">
+          {shoppingArrayOfObjects.map(shoppingItem => {
+            return (
+              <div className="basket-modal__card" key={shoppingItem.id}>
+                <div className="basket-modal__img-wrapper">
+                  <img
+                    className="basket-modal__img"
+                    src={shoppingItem.img}
+                    alt={shoppingItem.title}
+                  />
                 </div>
-                <CounterOfShoppingItems
-                  className="basket-modal__counter-wrapper"
-                  counter={shoppingItem.counter}
-                  onAdd={() =>
-                    addShopingItem(shoppingItem.id, cookies, setCookie)
-                  }
-                  onDel={() =>
-                    delShopingItem(shoppingItem.id, cookies, setCookie)
-                  }
-                />
-              </div>
 
-              <p className="basket-modal__price">
-                {shoppingItem.price * shoppingItem.counter}$
-              </p>
-            </div>
-          );
-        })}
+                <div className="basket-modal__content-wrapper">
+                  <div className="basket-modal__article">
+                    <p className="basket-modal__title">{shoppingItem.title}</p>
+                  </div>
+                  <CounterOfShoppingItems
+                    className="basket-modal__counter-wrapper"
+                    counter={shoppingItem.counter}
+                    onAdd={() =>
+                      addShopingItem(shoppingItem.id, cookies, setCookie)
+                    }
+                    onDel={() =>
+                      delShopingItem(shoppingItem.id, cookies, setCookie)
+                    }
+                  />
+                </div>
+
+                <p className="basket-modal__price">
+                  {shoppingItem.price * shoppingItem.counter}$
+                </p>
+              </div>
+            );
+          })}
+        </div>
+      )}
+
       {shoppingArrayOfObjects.length > 0 && (
         <div className="basket-modal__footer">
           <p className="basket-modal__total-price">
@@ -115,7 +119,9 @@ export const BasketModal = ({ isOpen, onClose }) => {
           </Button>
         </div>
       )}
-      {!shoppingArrayOfObjects.length && <p>No items here</p>}
+      {!shoppingArrayOfObjects.length && (
+        <p className="basket-modal__no-items">No items here</p>
+      )}
     </Modal>
   );
 };
