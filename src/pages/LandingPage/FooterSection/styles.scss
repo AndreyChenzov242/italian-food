@@ -50,10 +50,10 @@
   &__other {
     display: flex;
     flex-direction: column;
-    padding: 12px;
+    padding: 0 12px;
 
     @media screen and (max-width: $breakpoint-up-xs) {
-      padding: 4px;
+      padding: 0 4px;
     }
   }
 
