@@ -14,7 +14,7 @@ export const addShopingItem = (id, cookies, setCookie) => {
 
 export const delShopingItem = (id, cookies, setCookie) => {
   for (let index = cookies.shoppingData.length; index >= 0; index--) {
-    if (cookies.shoppingData[index] === id) {
+    if (cookies.shoppingData[index] == id) {
       cookies.shoppingData.splice(index, 1);
       break;
     }

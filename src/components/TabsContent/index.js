@@ -25,10 +25,13 @@ export const TabsContent = ({ tabsContentData }) => {
       tabsContentData[index].counter = cookies.shoppingData.filter(function (
         e
       ) {
-        return e === tabsContentData[index].id;
+        return e == tabsContentData[index].id;
       });
     }
   }
+
+  console.log(tabsContentData[0].counter.length);
+  console.log('hello');
 
   return (
     <div className="content-wrapper">
