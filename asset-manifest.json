@@ -1,21 +1,22 @@
 {
   "files": {
-    "main.css": "/italian-food/static/css/main.bf501be5.chunk.css",
-    "main.js": "/italian-food/static/js/main.b53234fb.chunk.js",
-    "main.js.map": "/italian-food/static/js/main.b53234fb.chunk.js.map",
+    "main.css": "/italian-food/static/css/main.52cdaa56.chunk.css",
+    "main.js": "/italian-food/static/js/main.2180a004.chunk.js",
+    "main.js.map": "/italian-food/static/js/main.2180a004.chunk.js.map",
     "runtime-main.js": "/italian-food/static/js/runtime-main.5ed9a8b9.js",
     "runtime-main.js.map": "/italian-food/static/js/runtime-main.5ed9a8b9.js.map",
     "static/css/2.ba159d6b.chunk.css": "/italian-food/static/css/2.ba159d6b.chunk.css",
-    "static/js/2.5040265b.chunk.js": "/italian-food/static/js/2.5040265b.chunk.js",
-    "static/js/2.5040265b.chunk.js.map": "/italian-food/static/js/2.5040265b.chunk.js.map",
+    "static/js/2.ec9d1462.chunk.js": "/italian-food/static/js/2.ec9d1462.chunk.js",
+    "static/js/2.ec9d1462.chunk.js.map": "/italian-food/static/js/2.ec9d1462.chunk.js.map",
     "index.html": "/italian-food/index.html",
-    "precache-manifest.cd36d69f4b25963a9ba9af373c00002f.js": "/italian-food/precache-manifest.cd36d69f4b25963a9ba9af373c00002f.js",
+    "precache-manifest.2455920c74ebaa531c842243774ebe31.js": "/italian-food/precache-manifest.2455920c74ebaa531c842243774ebe31.js",
     "service-worker.js": "/italian-food/service-worker.js",
     "static/css/2.ba159d6b.chunk.css.map": "/italian-food/static/css/2.ba159d6b.chunk.css.map",
-    "static/css/main.bf501be5.chunk.css.map": "/italian-food/static/css/main.bf501be5.chunk.css.map",
-    "static/js/2.5040265b.chunk.js.LICENSE.txt": "/italian-food/static/js/2.5040265b.chunk.js.LICENSE.txt",
+    "static/css/main.52cdaa56.chunk.css.map": "/italian-food/static/css/main.52cdaa56.chunk.css.map",
+    "static/js/2.ec9d1462.chunk.js.LICENSE.txt": "/italian-food/static/js/2.ec9d1462.chunk.js.LICENSE.txt",
     "static/media/about-image.jpg": "/italian-food/static/media/about-image.2fcc9547.jpg",
     "static/media/styles.scss": "/italian-food/static/media/home-bg.7a2b0059.jpg",
+    "static/media/logo-xxl.png": "/italian-food/static/media/logo-xxl.9e8067bf.png",
     "static/media/pasta-becon.jpg": "/italian-food/static/media/pasta-becon.e5a5f262.jpg",
     "static/media/pasta-karbonara.jpg": "/italian-food/static/media/pasta-karbonara.c13004a8.jpg",
     "static/media/pasta-salmon.jpg": "/italian-food/static/media/pasta-salmon.70c30a91.jpg",
@@ -43,8 +44,8 @@
   "entrypoints": [
     "static/js/runtime-main.5ed9a8b9.js",
     "static/css/2.ba159d6b.chunk.css",
-    "static/js/2.5040265b.chunk.js",
-    "static/css/main.bf501be5.chunk.css",
-    "static/js/main.b53234fb.chunk.js"
+    "static/js/2.ec9d1462.chunk.js",
+    "static/css/main.52cdaa56.chunk.css",
+    "static/js/main.2180a004.chunk.js"
   ]
 }

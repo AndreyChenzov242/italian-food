@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "0d8deedc5dbb43e87a628e2421768528",
+    "revision": "a46f92eec222fbf76b13939fb851e73b",
     "url": "/italian-food/index.html"
   },
   {
-    "revision": "eef509d5e2956e4d51cc",
+    "revision": "9b66e2e5a2f61edb6c8b",
     "url": "/italian-food/static/css/2.ba159d6b.chunk.css"
   },
   {
-    "revision": "4fd56c66e77d13999aee",
-    "url": "/italian-food/static/css/main.bf501be5.chunk.css"
+    "revision": "2bcfb0e9af9bce899261",
+    "url": "/italian-food/static/css/main.52cdaa56.chunk.css"
   },
   {
-    "revision": "eef509d5e2956e4d51cc",
-    "url": "/italian-food/static/js/2.5040265b.chunk.js"
+    "revision": "9b66e2e5a2f61edb6c8b",
+    "url": "/italian-food/static/js/2.ec9d1462.chunk.js"
   },
   {
     "revision": "2db80ee6e43bb57ab10aefd739542bd4",
-    "url": "/italian-food/static/js/2.5040265b.chunk.js.LICENSE.txt"
+    "url": "/italian-food/static/js/2.ec9d1462.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "4fd56c66e77d13999aee",
-    "url": "/italian-food/static/js/main.b53234fb.chunk.js"
+    "revision": "2bcfb0e9af9bce899261",
+    "url": "/italian-food/static/js/main.2180a004.chunk.js"
   },
   {
     "revision": "9091bf4d9cb6d499e443",
@@ -30,6 +30,14 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "2fcc9547aaa20c3e27f4ace9e947cfbf",
     "url": "/italian-food/static/media/about-image.2fcc9547.jpg"
+  },
+  {
+    "revision": "2641183ecb1239eab96cfcd6f66f1342",
+    "url": "/italian-food/static/media/contacts-bg-mobile.2641183e.jpg"
+  },
+  {
+    "revision": "9f3c06369742c599dbb574a04666a3b1",
+    "url": "/italian-food/static/media/contacts-bg.9f3c0636.jpg"
   },
   {
     "revision": "9ace816d2d25efda075e0de335b07b75",
@@ -46,6 +54,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "7a2b005943df458d6caab890db3e33bd",
     "url": "/italian-food/static/media/home-bg.7a2b0059.jpg"
+  },
+  {
+    "revision": "9e8067bfecdd958acf3e567ec5c63ba9",
+    "url": "/italian-food/static/media/logo-xxl.9e8067bf.png"
   },
   {
     "revision": "e5a5f262f5cd7100a8ead3939bc56f8d",
