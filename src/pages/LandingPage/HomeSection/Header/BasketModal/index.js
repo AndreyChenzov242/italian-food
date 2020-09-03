@@ -2,8 +2,9 @@ import React from 'react';
 
 // Modules
 
-import types from 'prop-types';
+import { CgShoppingCart } from 'react-icons/cg';
 import { useCookies } from 'react-cookie';
+import types from 'prop-types';
 import {
   addShopingItem,
   delShopingItem,
@@ -12,11 +13,8 @@ import {
 
 // Components
 
-import { AiOutlinePlusCircle, AiOutlineMinusCircle } from 'react-icons/ai';
 import { Modal } from '../../../../../components/Modal';
 import { Button } from '../../../../../components/Button';
-import { CgShoppingCart } from 'react-icons/cg';
-import { ReactIcon } from '../../../../../components/ReactIcon';
 import { menuData } from '../../../../../mocks/menuData';
 import { CounterOfShoppingItems } from '../../../../../components/CounterOfShoppingItems';
 
@@ -68,7 +66,7 @@ export const BasketModal = ({ isOpen, onClose }) => {
       width="md"
       title="Basket"
       titleIcon={CgShoppingCart}
-      addModalClass="basket-modal"
+      className="basket-modal"
       onClear={() => delAllShoppingItems(setCookie)}
     >
       {shoppingArrayOfObjects.length > 0 && (

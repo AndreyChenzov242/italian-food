@@ -1,10 +1,14 @@
 import React from 'react';
+
+// Modules
+
+import PropTypes from 'prop-types';
 import { useCookies } from 'react-cookie';
+import { CgShoppingCart } from 'react-icons/cg';
 
 // Components
 
 import { ReactIcon } from '../ReactIcon';
-import { CgShoppingCart } from 'react-icons/cg';
 
 // ----------------
 
@@ -25,4 +29,10 @@ export const Basket = ({ onClick }) => {
       <div className="basket-counter">{counterOfShopItems}</div>
     </div>
   );
+};
+
+// Type of props
+
+Basket.propTypes = {
+  onClick: PropTypes.func,
 };

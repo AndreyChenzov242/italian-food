@@ -4,6 +4,7 @@ import React, { useEffect } from 'react';
 
 import { createPortal } from 'react-dom';
 import classNames from 'classnames';
+import PropTypes from 'prop-types';
 
 // Components
 
@@ -17,15 +18,13 @@ import './styles.scss';
 
 export const Modal = ({
   bodyHeight,
-  noPadding,
-  closeIcon = true,
   children,
   onClose,
-  width = 'sm',
+  width,
   title,
   isOpen,
   titleIcon,
-  addModalClass,
+  className,
   onClear,
 }) => {
   useEffect(() => {
@@ -36,11 +35,13 @@ export const Modal = ({
     }
   }, [isOpen]);
 
-  const modalClass = classNames({
-    modal: true,
-    'modal--isOpen': isOpen,
-    [`${addModalClass}`]: addModalClass,
-  });
+  const modalClass = classNames(
+    {
+      modal: true,
+      'modal--isOpen': isOpen,
+    },
+    className
+  );
 
   const modalContent = classNames({
     modal__content: true,
@@ -48,16 +49,11 @@ export const Modal = ({
     [`modal__content--body-height-${bodyHeight}`]: bodyHeight,
   });
 
-  const modalBodyClass = classNames({
-    modal__body: true,
-    'modal__content--no-padding': noPadding,
-  });
-
   return createPortal(
     isOpen ? (
       <div className={modalClass}>
         <div className={modalContent}>
-          {(title || (closeIcon && onClose)) && (
+          {(title || onClose) && (
             <ModalHeader
               onClose={onClose}
               onClear={onClear}
@@ -65,13 +61,32 @@ export const Modal = ({
               titleIcon={titleIcon}
             />
           )}
-
           {children}
         </div>
-
         <div className="modal__backdrop" onClick={onClose} />
       </div>
     ) : null,
     document.body
   );
+};
+
+// Type of props
+
+Modal.propTypes = {
+  width: PropTypes.oneOf(['xs', 'sm', 'md', 'min-content', 'full']).isRequired,
+  children: PropTypes.node.isRequired,
+  bodyHeight: PropTypes.string,
+  className: PropTypes.string,
+  titleIcon: PropTypes.func,
+  onClick: PropTypes.func,
+  onClose: PropTypes.func.isRequired,
+  title: PropTypes.string,
+  onClear: PropTypes.func,
+  isOpen: PropTypes.bool.isRequired,
+};
+
+// Default value for props
+
+Modal.defaultProps = {
+  width: 'sm',
 };

@@ -13,7 +13,7 @@
   }
 
   &__close-btn {
-    transition: color $anim-time;
+    transition: color $anim-time, transform $anim-time;
     position: absolute;
     z-index: 10;
     cursor: pointer;
@@ -21,7 +21,7 @@
     top: 12px;
 
     &:hover {
-      color: #000;
+      transform: scale(1.2);
     }
   }
   &__title-icon {
@@ -37,14 +37,6 @@
     display: inline-block;
     margin-left: 12px;
     color: #f47262;
-  }
-
-  &__close-btn {
-    transition: transform 0.2s;
-
-    &:hover {
-      transform: scale(1.2);
-    }
   }
 
   &__clear-btn {

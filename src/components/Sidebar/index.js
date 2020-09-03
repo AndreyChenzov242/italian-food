@@ -41,6 +41,10 @@ export const Sidebar = ({ navbarList, open, onClick }) => {
                 to={item.to}
                 key={index}
                 onClick={onClick}
+                duration={500}
+                isDynamic={true}
+                smooth={true}
+                spy={true}
               >
                 {item.name}
               </Link>
@@ -66,10 +70,4 @@ Sidebar.propTypes = {
   navbarList: PropTypes.array.isRequired,
   open: PropTypes.bool.isRequired,
   onClick: PropTypes.func,
-};
-
-// Default value for props
-
-Sidebar.defaultProps = {
-  open: 'false',
 };

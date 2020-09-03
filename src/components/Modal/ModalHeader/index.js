@@ -2,8 +2,9 @@ import React from 'react';
 
 // Modules
 
-import { CgClose } from 'react-icons/cg';
 import { FaRegTrashAlt } from 'react-icons/fa';
+import { CgClose } from 'react-icons/cg';
+import PropTypes from 'prop-types';
 
 // Components
 
@@ -15,9 +16,7 @@ import './styles.scss';
 
 // ----------------
 
-export const ModalHeader = props => {
-  const { onClose, title, titleIcon, onClear } = props;
-
+export const ModalHeader = ({ onClose, title, titleIcon, onClear }) => {
   return onClose || title || titleIcon ? (
     <div className="modal-header">
       {titleIcon && (
@@ -51,4 +50,13 @@ export const ModalHeader = props => {
       )}
     </div>
   ) : null;
+};
+
+// Type of props
+
+ModalHeader.propTypes = {
+  onClose: PropTypes.func.isRequired,
+  onClear: PropTypes.func,
+  titleIcon: PropTypes.func,
+  title: PropTypes.string,
 };

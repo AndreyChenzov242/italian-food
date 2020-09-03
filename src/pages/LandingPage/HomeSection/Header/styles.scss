@@ -46,7 +46,7 @@
   .basket {
     cursor: pointer;
     position: relative;
-    transition: transform 0.3s;
+    transition: transform $anim-time;
 
     &:hover {
       transform: translateY(-3px);

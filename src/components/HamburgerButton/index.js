@@ -30,7 +30,7 @@ export const HamburgerButton = ({ onClick, isOpen }) => {
 
 HamburgerButton.propTypes = {
   onClick: types.func,
-  isOpen: types.bool.isRequired,
+  isOpen: types.bool,
 };
 
 // Default value for props

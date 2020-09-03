@@ -13,11 +13,11 @@ import './styles.scss';
 
 export const ReactIcon = ({
   className,
+  children,
+  onClick,
   color,
   size,
-  onClick,
   id,
-  children,
 }) => {
   const reactIconClass = classnames(
     {
@@ -41,6 +41,12 @@ ReactIcon.propTypes = {
   className: types.string,
   onClick: types.func,
   color: types.oneOf(['white', 'orange']),
-  size: types.string,
+  size: types.oneOf(['xs', 'sm', 'md', 'lg', 'xl', 'xxl', 'xxxl']),
   id: types.string,
+};
+
+// Default value for props
+
+ReactIcon.defaultProps = {
+  size: 'sm',
 };

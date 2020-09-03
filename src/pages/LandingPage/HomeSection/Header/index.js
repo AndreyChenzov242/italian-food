@@ -2,12 +2,12 @@ import React, { useState } from 'react';
 
 // Components
 
-import { Search } from '../../../../assets/svg/Search';
-import logo from '../../../../assets/images/logo-md.png';
-import { Navbar } from '../../../../components/Navbar';
-import { Sidebar } from '../../../../components/Sidebar';
-import { navbarList } from '../../../../constans/navbarList';
 import { HamburgerButton } from '../../../../components/HamburgerButton';
+import { navbarList } from '../../../../constans/navbarList';
+import { Sidebar } from '../../../../components/Sidebar';
+import logo from '../../../../assets/images/logo-md.png';
+import { Search } from '../../../../assets/svg/Search';
+import { Navbar } from '../../../../components/Navbar';
 import { Basket } from '../../../../components/Basket';
 import { BasketModal } from './BasketModal';
 

@@ -8,6 +8,7 @@ import { HomeSection } from './HomeSection';
 import { MenuSection } from './MenuSection';
 import { ContactsSection } from './ContactsSection';
 import { FooterSection } from './FooterSection';
+import { ButtonUp } from '../../components/ButtonUp';
 
 // Styles
 
@@ -24,6 +25,7 @@ export const LandingPage = () => {
       <MenuSection />
       <ContactsSection />
       <FooterSection />
+      <ButtonUp className="landing__button-up" />
     </div>
   );
 };

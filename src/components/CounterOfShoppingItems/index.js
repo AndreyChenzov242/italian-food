@@ -4,11 +4,11 @@ import React from 'react';
 
 import types from 'prop-types';
 import classNames from 'classnames';
+import { AiOutlinePlusCircle, AiOutlineMinusCircle } from 'react-icons/ai';
 
 // Components
 
 import { ReactIcon } from '../ReactIcon';
-import { AiOutlinePlusCircle, AiOutlineMinusCircle } from 'react-icons/ai';
 
 // Styles
 
@@ -46,11 +46,11 @@ export const CounterOfShoppingItems = ({
   );
 };
 
+// Type of props
+
 CounterOfShoppingItems.propTypes = {
   onAdd: types.func.isRequired,
   onDel: types.func.isRequired,
-  counter: types.string.isRequired,
+  counter: types.number.isRequired,
   className: types.string,
 };
-
-//() => delShopingItem(shoppingItem.id, cookies, setCookie)

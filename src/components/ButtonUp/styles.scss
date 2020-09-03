@@ -1,0 +1,27 @@
+@import '../../styles/configs.scss';
+@import '../../styles/colors.scss';
+@import '../../styles/mixins.scss';
+
+.button-up {
+  @include center;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: $orange;
+  transition: background-color $anim-time-fast ease,
+    opacity $anim-time-fast ease, color $anim-time-fast ease;
+  pointer-events: none;
+  opacity: 0;
+  color: #fff;
+  transition: 0.6s all;
+
+  &:hover {
+    transform: translateY(-8px);
+  }
+
+  &--visible {
+    opacity: 0.7;
+    pointer-events: auto;
+    cursor: pointer;
+  }
+}

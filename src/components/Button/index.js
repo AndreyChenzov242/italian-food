@@ -50,6 +50,7 @@ Button.propTypes = {
   color: PropTypes.oneOf(['white', 'orange']),
   onClick: PropTypes.func,
   uppercase: PropTypes.bool,
+  className: PropTypes.string,
 };
 
 // Default value for props

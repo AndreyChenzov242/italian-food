@@ -66,10 +66,10 @@
     }
 
     @media (max-width: $breakpoint-down-xs) {
-      border-radius: 0;
       max-width: 100%;
-      margin: 0;
       height: 100%;
+      border-radius: 0;
+      margin: 0;
     }
   }
 }

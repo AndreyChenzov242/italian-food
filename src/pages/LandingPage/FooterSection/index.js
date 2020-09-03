@@ -1,15 +1,17 @@
 import React from 'react';
 
-// Components
+// Modules
 
-import { ContentWidthLimiter } from '../../../components/ContentWidthLimiter';
-import logo from '../../../assets/images/logo-sm-black.png';
-
-import { ReactIcon } from '../../../components/ReactIcon';
 import { FaInstagram } from 'react-icons/fa';
 import { CgFacebook } from 'react-icons/cg';
 import { FiTwitter } from 'react-icons/fi';
 import { RiWhatsappLine } from 'react-icons/ri';
+
+// Components
+
+import { ContentWidthLimiter } from '../../../components/ContentWidthLimiter';
+import { ReactIcon } from '../../../components/ReactIcon';
+
 // Styles
 
 import './styles.scss';
@@ -55,7 +57,7 @@ export const FooterSection = () => {
             <a href="#">History</a>
             <a href="#">Our Team</a>
             <a href="#">Brand Guidelines</a>
-            <a href="#">Terms & Condition</a>
+            <a href="#">Terms &amp; Condition</a>
             <a href="#">Privacy Policy</a>
           </div>
           <div className="footer__services">
