@@ -30,9 +30,6 @@ export const TabsContent = ({ tabsContentData }) => {
     }
   }
 
-  console.log(tabsContentData[0].counter.length);
-  console.log('hello');
-
   return (
     <div className="content-wrapper">
       {tabsContentData.map((tabsItem, index) => {
