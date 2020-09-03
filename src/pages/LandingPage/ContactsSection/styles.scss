@@ -1,11 +1,13 @@
 @import '../../../styles/configs.scss';
 
 .contacts {
-  min-height: 580px !important;
+  min-height: 580px;
   background-image: url('../../../assets/images/contacts-bg.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   padding: 88px 24px 88px 24px;
+  display: flex;
+  align-items: center;
 
   @media screen and (max-width: $breakpoint-up-sm) {
     background-image: url('../../../assets/images/contacts-bg-mobile.jpg');
@@ -15,6 +17,7 @@
     color: #fff;
     font-family: 'Yeseva One', cursive;
     font-weight: normal;
+    text-align: center;
   }
 
   &__wrapper {

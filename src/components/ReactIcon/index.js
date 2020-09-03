@@ -40,7 +40,7 @@ export const ReactIcon = ({
 ReactIcon.propTypes = {
   className: types.string,
   onClick: types.func,
-  color: types.oneOf(['yellow', 'white', 'orange']),
+  color: types.oneOf(['white', 'orange']),
   size: types.string,
   id: types.string,
 };
