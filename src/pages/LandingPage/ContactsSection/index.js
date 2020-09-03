@@ -23,9 +23,9 @@ export const ContactsSection = () => {
               Italian <br /> Food
             </div>
           </div>
-          <h2 className="subtitle contacts__subtitle">
+          <div className="subtitle contacts__subtitle">
             Lorem ipsum dolor sit amet, consectetur{' '}
-          </h2>
+          </div>
         </div>
       </div>
     </>
