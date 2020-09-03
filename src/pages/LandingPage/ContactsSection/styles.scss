@@ -1,0 +1,65 @@
+@import '../../../styles/configs.scss';
+
+.contacts {
+  min-height: 580px !important;
+  background-image: url('../../../assets/images/contacts-bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 88px 24px 88px 24px;
+
+  @media screen and (max-width: $breakpoint-up-sm) {
+    background-image: url('../../../assets/images/contacts-bg-mobile.jpg');
+  }
+
+  & &__subtitle {
+    color: #fff;
+    font-family: 'Yeseva One', cursive;
+    font-weight: normal;
+    text-align: center;
+  }
+
+  &__wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__logo-wrapper {
+    width: fit-content;
+    margin-bottom: 56px;
+    display: flex;
+
+    .logo__text {
+      color: #fff;
+      font-family: 'Yeseva One', cursive;
+      font-size: 80px;
+      line-height: 0.9;
+      margin-left: 16px;
+      margin-top: -7px;
+
+      @media screen and (max-width: $breakpoint-up-md) {
+        font-size: 60px;
+        line-height: 0.93;
+      }
+      @media screen and (max-width: $breakpoint-up-md) {
+        font-size: 45px;
+        margin-top: -3px;
+      }
+    }
+
+    img {
+      width: 130px;
+      height: 130px;
+
+      @media screen and (max-width: $breakpoint-up-md) {
+        width: 98px;
+        height: 98px;
+      }
+      @media screen and (max-width: $breakpoint-up-md) {
+        width: 74px;
+        height: 74px;
+      }
+    }
+  }
+}

@@ -20,7 +20,9 @@ export const Navbar = ({ navbarList }) => {
             <Link
               activeClass="navbar__item--active"
               className="navbar__item"
+              duration={500}
               isDynamic={true}
+              smooth={true}
               spy={true}
               to={item.to}
             >

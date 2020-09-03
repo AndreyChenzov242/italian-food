@@ -6,6 +6,7 @@ import { FeaturesSection } from './FeaturesSection';
 import { AboutSection } from './AboutSection';
 import { HomeSection } from './HomeSection';
 import { MenuSection } from './MenuSection';
+import { ContactsSection } from './ContactsSection';
 
 // Styles
 
@@ -20,6 +21,7 @@ export const LandingPage = () => {
       <AboutSection />
       <FeaturesSection />
       <MenuSection />
+      <ContactsSection />
     </div>
   );
 };
