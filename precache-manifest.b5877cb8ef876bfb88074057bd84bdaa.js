@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "69da51048b226067afc71002512492b1",
+    "revision": "854ee424db6d17e10615675c4a189aac",
     "url": "/italian-food/index.html"
   },
   {
-    "revision": "6135aa6d6cc0aa34c5c9",
+    "revision": "509bd015186a3c14c481",
     "url": "/italian-food/static/css/main.50439eb6.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/italian-food/static/js/2.4013702f.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "6135aa6d6cc0aa34c5c9",
-    "url": "/italian-food/static/js/main.a8a44d6d.chunk.js"
+    "revision": "509bd015186a3c14c481",
+    "url": "/italian-food/static/js/main.89b537c9.chunk.js"
   },
   {
     "revision": "9091bf4d9cb6d499e443",
