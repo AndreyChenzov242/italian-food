@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/italian-food/static/css/main.015d7601.chunk.css",
-    "main.js": "/italian-food/static/js/main.a18c4a5f.chunk.js",
-    "main.js.map": "/italian-food/static/js/main.a18c4a5f.chunk.js.map",
+    "main.css": "/italian-food/static/css/main.fd9c2617.chunk.css",
+    "main.js": "/italian-food/static/js/main.ea8f6ee9.chunk.js",
+    "main.js.map": "/italian-food/static/js/main.ea8f6ee9.chunk.js.map",
     "runtime-main.js": "/italian-food/static/js/runtime-main.5ed9a8b9.js",
     "runtime-main.js.map": "/italian-food/static/js/runtime-main.5ed9a8b9.js.map",
-    "static/js/2.4013702f.chunk.js": "/italian-food/static/js/2.4013702f.chunk.js",
-    "static/js/2.4013702f.chunk.js.map": "/italian-food/static/js/2.4013702f.chunk.js.map",
+    "static/js/2.a0e23144.chunk.js": "/italian-food/static/js/2.a0e23144.chunk.js",
+    "static/js/2.a0e23144.chunk.js.map": "/italian-food/static/js/2.a0e23144.chunk.js.map",
     "index.html": "/italian-food/index.html",
-    "precache-manifest.b6e3fd2ae9265346cb75dc9f166dbad2.js": "/italian-food/precache-manifest.b6e3fd2ae9265346cb75dc9f166dbad2.js",
+    "precache-manifest.1b0af70d656fa1c5dfaa2ca1938db4bc.js": "/italian-food/precache-manifest.1b0af70d656fa1c5dfaa2ca1938db4bc.js",
     "service-worker.js": "/italian-food/service-worker.js",
-    "static/css/main.015d7601.chunk.css.map": "/italian-food/static/css/main.015d7601.chunk.css.map",
-    "static/js/2.4013702f.chunk.js.LICENSE.txt": "/italian-food/static/js/2.4013702f.chunk.js.LICENSE.txt",
+    "static/css/main.fd9c2617.chunk.css.map": "/italian-food/static/css/main.fd9c2617.chunk.css.map",
+    "static/js/2.a0e23144.chunk.js.LICENSE.txt": "/italian-food/static/js/2.a0e23144.chunk.js.LICENSE.txt",
     "static/media/about-image.jpg": "/italian-food/static/media/about-image.2fcc9547.jpg",
     "static/media/styles.scss": "/italian-food/static/media/home-bg.7a2b0059.jpg",
     "static/media/pasta-becon.jpg": "/italian-food/static/media/pasta-becon.e5a5f262.jpg",
@@ -39,8 +39,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.5ed9a8b9.js",
-    "static/js/2.4013702f.chunk.js",
-    "static/css/main.015d7601.chunk.css",
-    "static/js/main.a18c4a5f.chunk.js"
+    "static/js/2.a0e23144.chunk.js",
+    "static/css/main.fd9c2617.chunk.css",
+    "static/js/main.ea8f6ee9.chunk.js"
   ]
 }
