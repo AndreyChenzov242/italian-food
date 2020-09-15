@@ -3,13 +3,16 @@ import React, { useState } from 'react';
 // Components
 
 import { HamburgerButton } from '../../../../components/HamburgerButton';
-import { navbarList } from '../../../../constans/navbarList';
+import { navbarList } from '../../../../constants/navbarList';
 import { Sidebar } from '../../../../components/Sidebar';
-import logo from '../../../../assets/images/logo-md.png';
-import { Search } from '../../../../assets/svg/Search';
+import { Search } from '../../../../components/Search';
 import { Navbar } from '../../../../components/Navbar';
 import { Basket } from '../../../../components/Basket';
 import { BasketModal } from './BasketModal';
+
+// Assets
+
+import logo from '../../../../assets/images/logo-md.png';
 
 // Styles
 

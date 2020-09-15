@@ -8,7 +8,7 @@ import PropTypes from 'prop-types';
 
 // Components
 
-import { Search } from '../../assets/svg/Search';
+import { Search } from '../Search';
 
 // Style
 
