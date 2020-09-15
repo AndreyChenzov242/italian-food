@@ -2,8 +2,11 @@ import React from 'react';
 
 // Components
 
-import aboutImage from '../../../assets/images/about-image.jpg';
 import { ContentWidthLimiter } from '../../../components/ContentWidthLimiter';
+
+// Assets
+
+import aboutImage from '../../../assets/images/about-image.jpg';
 
 // Styles
 

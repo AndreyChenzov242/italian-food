@@ -20,16 +20,19 @@
     min-width: 88px;
     padding-top: 1px;
   }
+
   &--size-sm {
     font-size: 1.5625rem;
     min-width: 120px;
     padding-top: 1px;
   }
+
   &--size-md {
     font-size: 1.75rem;
     min-width: 185px;
     padding-top: 1px;
   }
+
   &--size-fluid {
     font-size: 2rem;
     width: 100%;
@@ -39,48 +42,63 @@
   &--mb-sm {
     margin-bottom: 8px;
   }
+
   &--mt-sm {
     margin-top: 8px;
   }
+
   &--mr-sm {
     margin-right: 8px;
   }
+
   &--ml-sm {
     margin-left: 8px;
   }
+
   &--mt-md {
     margin-top: 16px;
   }
+
   &--ml-md {
     margin-left: 16px;
   }
+
   &--mb-md {
     margin-bottom: 16px;
   }
+
   &--mr-md {
     margin-right: 16px;
   }
+
   &--ml-lg {
     margin-left: 32px;
   }
+
   &--mt-lg {
     margin-top: 32px;
   }
+
   &--mr-lg {
     margin-right: 32px;
   }
+
   &--mb-lg {
     margin-bottom: 32px;
   }
+
   &--mt-xl {
     margin-top: 48px;
   }
+
   &--ml-xl {
     margin-left: 48px;
   }
+
   &--mr-xl {
     margin-right: 48px;
   }
+
   &--mx-auto {
     margin-left: auto;
     margin-right: auto;

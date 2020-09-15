@@ -66,31 +66,31 @@
   @media screen and (max-height: $breakpoint-up-xs) {
     display: none;
   }
-}
 
-.home-decoration--right {
-  bottom: -1px;
-  right: 0;
+  &--right {
+    bottom: -1px;
+    right: 0;
 
-  @media screen and (max-width: $breakpoint-up-md) {
-    right: -200px;
+    @media screen and (max-width: $breakpoint-up-md) {
+      right: -200px;
+    }
+    @media screen and (max-width: $breakpoint-up-xs) {
+      right: -300px;
+    }
   }
-  @media screen and (max-width: $breakpoint-up-xs) {
-    right: -300px;
-  }
-}
 
-.home-decoration--left {
-  top: 0;
-  left: -80px;
+  &--left {
+    top: 0;
+    left: -80px;
 
-  @media screen and (max-width: $breakpoint-up-lg) {
-    left: -100px;
-  }
-  @media screen and (max-width: $breakpoint-up-md) {
-    left: -120px;
-  }
-  @media screen and (max-width: $breakpoint-up-xs) {
-    left: -175px;
+    @media screen and (max-width: $breakpoint-up-lg) {
+      left: -100px;
+    }
+    @media screen and (max-width: $breakpoint-up-md) {
+      left: -120px;
+    }
+    @media screen and (max-width: $breakpoint-up-xs) {
+      left: -175px;
+    }
   }
 }

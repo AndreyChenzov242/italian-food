@@ -5,6 +5,9 @@ import React from 'react';
 import { CgShoppingCart } from 'react-icons/cg';
 import { useCookies } from 'react-cookie';
 import types from 'prop-types';
+
+// Utils
+
 import {
   addShopingItem,
   delShopingItem,

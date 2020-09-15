@@ -3,12 +3,15 @@ import React, { useState } from 'react';
 // Components
 
 import { HamburgerButton } from '../../../../components/HamburgerButton';
-import { navbarList } from '../../../../constants/navbarList';
 import { Sidebar } from '../../../../components/Sidebar';
-import { Search } from '../../../../components/Search';
+import { Search } from '../../../../components/Search/index';
 import { Navbar } from '../../../../components/Navbar';
 import { Basket } from '../../../../components/Basket';
 import { BasketModal } from './BasketModal';
+
+// Constants
+
+import { navbarList } from '../../../../constants/navbarList';
 
 // Assets
 
@@ -39,7 +42,7 @@ export const Header = () => {
       </a>
       <div className="header__content-wrapper">
         <Navbar navbarList={navbarList} />
-        <form className="header__search-form search-form">
+        <form className="search-form header__search-form ">
           <input type="text" className="search-form__input" />
           <button>
             <Search />

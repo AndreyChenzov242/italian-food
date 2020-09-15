@@ -24,6 +24,7 @@
     @media screen and (max-width: $breakpoint-up-xl) {
       width: 250px;
     }
+
     @media screen and (max-width: $breakpoint-up-lg) {
       display: none;
     }
@@ -31,13 +32,16 @@
 
   &__logo-wrapper {
     z-index: 5;
+
     @media screen and (max-width: $breakpoint-up-sm) {
       width: 130px;
     }
   }
+
   &__content-wrapper {
     display: flex;
     align-items: center;
+
     @media screen and (max-width: 992px) {
       display: none;
     }

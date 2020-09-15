@@ -1,6 +1,6 @@
 import React from 'react';
 
-// Components
+// Assets
 
 import logo from '../../../assets/images/logo-without-text.png';
 
