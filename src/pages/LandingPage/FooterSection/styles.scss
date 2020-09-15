@@ -39,9 +39,16 @@
     max-width: 600px;
     width: 100%;
     justify-content: space-between;
+    flex-wrap: wrap;
 
     @media screen and (max-width: $breakpoint-up-md) {
-      margin-bottom: 24px;
+      justify-content: space-around;
+    }
+
+    & > * {
+      @media screen and (max-width: $breakpoint-up-md) {
+        margin-bottom: 24px;
+      }
     }
   }
 
@@ -53,7 +60,7 @@
     padding: 0 12px;
 
     @media screen and (max-width: $breakpoint-up-xs) {
-      padding: 0 4px;
+      padding: 0 8px;
     }
   }
 
@@ -64,6 +71,10 @@
 
     @media screen and (max-width: $breakpoint-up-xs) {
       font-size: 2rem;
+    }
+
+    @media screen and (max-width: $breakpoint-up-md) {
+      margin-bottom: 8px;
     }
   }
 

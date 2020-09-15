@@ -43,6 +43,10 @@
     font-size: 2.0812rem;
     font-weight: normal;
     margin-top: 48px;
+
+    @media screen and (max-width: $breakpoint-up-sm) {
+      font-size: 1.5rem;
+    }
   }
 
   &__article {
